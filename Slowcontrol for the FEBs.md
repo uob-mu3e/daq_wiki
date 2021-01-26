@@ -1,0 +1,1 @@
+The FEBs are controlled and monitored from the switching boards. There is a dedicate fibre downlink from the Switching Board to the FEB, for the uplink, slow control gets merged into the main data stream on the FEB and demerged at the switching board. The PCIe readable memory is used to transfer data to the switching PC.
