@@ -4,7 +4,7 @@ This is a trial for the Mu3e DAQ manual
 
 ## Sections
 
-* [Slowcontrol for the FEBs](online/Slowcontrol for the FEBs)
+* [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
 
 ## Wiki info
 
