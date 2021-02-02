@@ -1,0 +1,1 @@
+In many test setups, not all DAQ components (e.g. clock and reset system) are present. In this case set the appropriate defines in missing_hardware.h - if the defines are defined (on, 1), then the hardware will be emulated.
