@@ -39,6 +39,7 @@ In what state is the hardware (development?), who will bring what to PSI
 
 # Milestones
 (no particular order)
+
 * FEB programming via optical fibre (Nik)
 * FEB programming via MSCB (Nik?)
 * FEB monitoring via optical link (Nik)
@@ -46,3 +47,11 @@ In what state is the hardware (development?), who will bring what to PSI
 * Pixel configuration via FEB/DAB (Luigi, Martin, ...)
 * Pixel RO via FEB/DAB (Luigi, Martin, ...)
 * Pixel sorter test (Nik + ...)
+* Tile configuration via FEB/DAB (Tiancheng, Konrad)
+* Tile RO via FEB/DAB (Tiancheng, Konrad)
+* Fibre configuration via FEB/DAB (Lukas, Yannick)
+* Fibre RO via FEB/DAB (Lukas, Yannick)
+* Data chain FEB -> Switching Board -> Farm (Marius, Alex)
+* DDR3 buffering of receiving baord (Marius)
+* Readout from DDR3 buffer (Marius, Nik)
+* Tile, Fibre, Pixel running together (all)
