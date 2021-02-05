@@ -41,9 +41,9 @@ In what state is the hardware (development?), who will bring what to PSI
 (no particular order)
 
 * FEB programming via optical fibre (Nik)
-* FEB programming via MSCB (Nik?)
+* FEB programming via MSCB (Martin, waiting for optical first)
 * FEB monitoring via optical link (Nik)
-* FEB monitoring via backlpane
+* FEB monitoring via backlpane (Martin ?)
 * Pixel configuration via FEB/DAB (Luigi, Martin, ...)
 * Pixel RO via FEB/DAB (Luigi, Martin, ...)
 * Pixel sorter test (Nik + ...)
