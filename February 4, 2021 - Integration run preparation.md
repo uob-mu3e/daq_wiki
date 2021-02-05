@@ -30,6 +30,9 @@ In what state is the hardware (development?), who will bring what to PSI
 * Farm firmware status (Marius, Alex, ...)
 
 ## Software status and to dos
+* Are there any architectural decisions still open?
+* Will there be a database?
 * rootana build
 * what analyis should run?
 * data formats for saving?
+* Event display (Ben)
