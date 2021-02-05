@@ -36,3 +36,13 @@ In what state is the hardware (development?), who will bring what to PSI
 * what analyis should run?
 * data formats for saving?
 * Event display (Ben)
+
+# Milestones
+(no particular order)
+* FEB programming via optical fibre (Nik)
+* FEB programming via MSCB (Nik?)
+* FEB monitoring via optical link (Nik)
+* FEB monitoring via backlpane
+* Pixel configuration via FEB/DAB (Luigi, Martin, ...)
+* Pixel RO via FEB/DAB (Luigi, Martin, ...)
+* Pixel sorter test (Nik + ...)
