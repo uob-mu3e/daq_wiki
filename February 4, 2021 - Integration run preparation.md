@@ -41,7 +41,7 @@ In what state is the hardware, who will bring what to PSI
     *Not much change needed relative to DESY testbeam version, Mainz will support*
 * Pixel frontend (Nik/Sebastian/Martin/...)  
      *Sorting needs to be tested  
-      For the current version of the sorter, see #88*
+      For the current version of the sorter at 125 MHz TS, see* #88
 * Tile frontend (Konrad?), do we try to sort?
      *Nik will try to come up with a sorting, Nik and Marius will try to come up with a way for handling the TS counter overflow at 2**15-1*
 * Fibre frontend - what do we try here?
