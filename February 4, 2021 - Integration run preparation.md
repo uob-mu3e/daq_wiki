@@ -5,6 +5,7 @@
 In what state is the hardware (development?), who will bring what to PSI
 
 ### DAQ
+* Are we confident in the FEB? Produce 12 more?
 * Optical fibres: Long fibres in place at PSI, Mainz will bring fanout crates and cables for both ends
 * Clock box: Mainz will bring the UCL box
 * Mainz will bring the monster PC (one switching board)
