@@ -1,7 +1,3 @@
-## Wiki info
-
-Welcome to your wiki! This is the default page we've installed for your convenience. Go ahead and edit it.
-
 ## Wiki features
 
 This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax. The [MarkDownDemo tutorial](https://bitbucket.org/tutorials/markdowndemo) shows how various elements are rendered. The [Bitbucket documentation](https://confluence.atlassian.com/x/FA4zDQ) has more information about using a wiki.
