@@ -38,6 +38,10 @@ In what state is the hardware (development?), who will bring what to PSI
 * data formats for saving?
 * Event display (Ben)
 
+## Documentation
+* Is this ok for documentation?
+
+
 # Milestones
 (no particular order)
 
