@@ -53,6 +53,8 @@ In what state is the hardware, who will bring what to PSI
      Test compile for LHCb board (different speedgrade!)*
 * Farm firmware status (Marius)
      *Work ongoing, DDR3 to be fully integrated, software will need a slight update for selective reading. Bank formats will closely follow DESY formats, should go to specbook, review by Nik*
+* Define and implement error conditions leading to run stops (Marius, ...)     
+
 
 ## Software status and to dos
 * Are there any architectural decisions still open?  
