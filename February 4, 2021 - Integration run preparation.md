@@ -29,6 +29,7 @@ In what state is the hardware (development?), who will bring what to PSI
 * How do we merge the timing detectors?
 * Merging firmware status (Marius)
 * Farm firmware status (Marius, Alex, ...)
+* Stop System Errors (Marius, ...)
 
 ## Software status and to dos
 * Are there any architectural decisions still open?
