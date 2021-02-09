@@ -43,7 +43,7 @@ In what state is the hardware, who will bring what to PSI
      *Sorting needs to be tested  
       For the current version of the sorter at 125 MHz TS, see* pull request #88
 * Tile frontend (Konrad?), do we try to sort?
-     *Nik will try to come up with a sorting, Nik and Marius will try to come up with a way for handling the TS counter overflow at 2**15-1*
+     *Nik will try to come up with a sorting, Nik and Marius will try to come up with a way for handling the TS counter overflow at 2**15-1 (see for simulation #3fd0f11)*
 * Fibre frontend - what do we try here?
      *Same here*
 * How do we merge the timing detectors?
