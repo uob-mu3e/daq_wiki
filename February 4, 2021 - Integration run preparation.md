@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present: Andrea, Martin, Frederik, Yonathan, Yannick, Alex, Lukas, Tiancheng, Martin, Sebastian, Cristina, Konrad, Nik*
+*Present: Andrea, Martin, Frederik, Yonathan, Yannick, Alex, Lukas, Tiancheng, Marius, Sebastian, Cristina, Konrad, Nik*
 
 ## Hardware status and to dos
 
