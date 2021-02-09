@@ -64,7 +64,7 @@ In what state is the hardware, who will bring what to PSI
   *How do we know what runs we took? Is flat MIDAS enough? Nik checks with Stefan.  
   Flat MIDAS is not enough, use a SQL database, has straightforward MIDAS integration*
 * rootana build  
-  *Will start with mana from scratch, port existing code. Stefan recommends manalyzer*
+  *Will start with manalyzer from scratch, port existing code. Stefan also recommends manalyzer*
 * what analysis should run?  
   *To be discussed later*
 * data formats for saving?  
