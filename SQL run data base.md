@@ -1,0 +1,1 @@
+Essential run info is to be saved in a SQL database using the MIDAS logger (see
