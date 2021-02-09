@@ -61,7 +61,8 @@ In what state is the hardware, who will bring what to PSI
 * Are there any architectural decisions still open?  
   *None identified*
 * Will there be a database?  
-  *How do we know what runs we took? Is flat MIDAS enough? Nik checks with Stefan*
+  *How do we know what runs we took? Is flat MIDAS enough? Nik checks with Stefan.  
+  Flat MIDAS is not enough, use a SQL database, has straightforward MIDAS integration*
 * rootana build  
   *Will start with mana from scratch, port existing code. Stefan recommends manalyzer*
 * what analysis should run?  
