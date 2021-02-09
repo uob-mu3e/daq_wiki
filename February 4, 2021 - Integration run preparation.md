@@ -17,7 +17,7 @@ In what state is the hardware, who will bring what to PSI
      *Mainz will buy one more box for dual PCIe with the full switching board*
 * Clarify what we need in terms of network HW
 * Crate controllers are somewhat uncertain  
-     *Nik will ping Stefan*
+     *Nik will ping Stefan - Stefan needs one more day, not before next week*
 * Will HD have 5 crates ready?  
      *On track in HD - would like to test with crate controller - see above.  
      HD will perform an electrical connectivity test with a DAB at the earliest convenience*
@@ -63,7 +63,7 @@ In what state is the hardware, who will bring what to PSI
 * Will there be a database?  
   *How do we know what runs we took? Is flat MIDAS enough? Nik checks with Stefan*
 * rootana build  
-  *Will start with mana from scratch, port existing code*
+  *Will start with mana from scratch, port existing code. Stefan recommends manalyzer*
 * what analysis should run?  
   *To be discussed later*
 * data formats for saving?  
