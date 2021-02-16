@@ -8,6 +8,7 @@ This is a trial for the Mu3e DAQ manual
 * [Missing hardware](Missing hardware)
 * [DAQ meetings](DAQ meetings)
 * [SQL run database](SQL run data base)
+* [MuTrig sorting](MuTrig sorting)
 
 
 ## Housekeeping
