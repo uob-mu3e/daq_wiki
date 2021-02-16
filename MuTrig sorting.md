@@ -25,5 +25,8 @@ Bonus points for:
 Questions:
 
 * The whole lapsing thing
-* The memory thing (which could also be the sorting depth thing)
+*    The memory thing (which could also be the sorting depth thing)
+
+     The Arria V A7 has 13660 K of M10K memory (1366 blocks). The PRBS ROM should need less than 70, so that should be ok
+
 * How expensive is the divide by 5 thing?
