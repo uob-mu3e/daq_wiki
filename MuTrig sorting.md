@@ -5,14 +5,14 @@ In turn requires: We need to do PRBS decoding and lapse correction before sortin
 Issues:  
 
 * PRBS decoder needs a very large ROM  
-* Lapse correction might or might not require a 625 MHz counter (when does the MuTrig generate a frame)  
-* We need to get to a good frequency (i.e. 125 MHz, which implies a divide by 4)
+* Lapse correction  
+* We need to get to a good frequency (i.e. 125 MHz, which implies a divide by 5)
 
 Rough idea:
 
 * Use the fact that a hit takes 6 cycles (tiles) or three and a bit cycles (fibres) to arrive for a first multiplexer: 6 -> 1 for the tiles, 3 -> 1 for the fibres
 * In both cases that requires three PRBS decoders (or an adventurous scheme with partitioning or running the ROM at 375 MHz) - does that fit?
-* Then we somehow detect lapses and add that to decoded timestamp
+* Then we somehow detect lapses and add that to decoded timestamp (can be done with a 125 MHz/increment by 5 counter)
 * Then we divide the TS by 5
 * The we head into the sorter; much fewer input channels than for the pixels (three for both tiles and fibres), but much larger sorting depth.
 * More or less done...
@@ -24,7 +24,7 @@ Bonus points for:
 
 Questions:
 
-* The whole lapsing thing
+* The whole lapsing thing (solved, after some thought)
 *    The memory thing (which could also be the sorting depth thing)
 
      The Arria V A7 has 13660 K of M10K memory (1366 blocks). The PRBS ROM should need less than 70, so that should be ok
