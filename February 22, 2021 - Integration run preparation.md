@@ -7,11 +7,14 @@
 In what state is the hardware, who will bring what to PSI
 
 ### DAQ
-* 12 more FEBs are in production  
-* Optical fibres: Long fibres in place at PSI, Mainz will bring fanout crates and cables for both ends. Labelling scheme in pull request to spec book. Need to count fanout fibres needed.
+*    12 more FEBs are in production - see [Schematic](https://www.physi.uni-heidelberg.de/Forschung/he/mu3e/restricted/notes/Mu3e-Note-0061-Frontenboard_v2_1_Schematic.pdf)
+    * FEB v2.1 and FEB v2.0 are firmware-compatible
+    * SPI clk line between the boards is fixed, but wee keep the workaround for compatibility
+    * The monitored voltages are connected differently to the MAX; this needs to be handled in the MIDAS software.
+* Optical fibres: Long fibres in place at PSI, Mainz will bring fanout crates and cables for both ends. Labelling scheme in pull request to spec book. Need to count fanout fibres needed in the counting house.
 * Clock box: Mainz will bring the UCL box  
 * Mainz will bring the monster PC (one switching board)
-* Receiving PCs: Box ordered,monster will be receiving/backend, the nebox will be switching.  
+* Receiving PCs: Box ordered,monster will be receiving/backend, the new box will be switching.  
 * Clarify what we need in terms of network HW - ongoing.
 * Crate and crate controller on the way to Mainz.
 * HD will produce crates after Controller test.
@@ -53,15 +56,15 @@ In what state is the hardware, who will bring what to PSI
 
 * FEB programming via optical fibre (Nik)
      * DONE: Integrate and test SPI between MAX10 and Arria 
-     * Write programming data via SPI
-     * Write programming data to Arria via optical
+     * WRITTEN: Write programming data via SPI
+     * ONGOING: Write programming data to Arria via optical
      * User IF for programming
 * FEB programming via MSCB (Martin, waiting for optical first)
 * FEB monitoring via optical link (Nik)
-     * Bank writing
-     * Graphical UI
-* FEB monitoring via backplane (Martin ?)
-* Pixel configuration via FEB/DAB (Luigi, Martin, ...)
+     * ONGOING: Bank writing
+     * ONGOING: Graphical UI
+* FEB monitoring via backplane (Martin ?); might be delayed to after the spring run
+* ONGOING Pixel configuration via FEB/DAB (Luigi, Martin, ...)
 * Pixel RO via FEB/DAB (Luigi, Martin, ...)
 * Pixel sorter test (Nik + ...)
 * Tile configuration via FEB/DAB (Tiancheng, Konrad)
