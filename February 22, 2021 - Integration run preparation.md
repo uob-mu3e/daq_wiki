@@ -11,7 +11,7 @@ In what state is the hardware, who will bring what to PSI
     * FEB v2.1 and FEB v2.0 are firmware-compatible
     * SPI clk line between the boards is fixed, but wee keep the workaround for compatibility
     * The monitored voltages are connected differently to the MAX; this needs to be handled in the MIDAS software.
-* Optical fibres: Long fibres in place at PSI, Mainz will bring fanout crates and cables for both ends. Labelling scheme in pull request to spec book. Need to count fanout fibres needed in the counting house.
+* Optical fibres: Long fibres in place at PSI, Mainz will bring fanout crates and cables for both ends. Labelling scheme in [pull request to spec book](https://bitbucket.org/mu3e/mu3especbook/raw/e4fc3d0a455b86dd5800b6a5d40f0c5f89431b83/figures/CableLabellingCommissioningRun.pdf). Need to count fanout fibres needed in the counting house.
 * Clock box: Mainz will bring the UCL box  
 * Mainz will bring the monster PC (one switching board)
 * Receiving PCs: Box ordered,monster will be receiving/backend, the new box will be switching.  
