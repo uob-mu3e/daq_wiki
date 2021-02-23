@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present:*
+*Present: Alex, Frederik, Sebastian, Martin, Marius, Tiancheng, Ben, Konrad, Gavin, Luigi, Cristina, Nik*
 
 ## Hardware status and to dos
 
@@ -16,35 +16,54 @@ In what state is the hardware, who will bring what to PSI
 * Mainz will bring the monster PC (one switching board)
 * Receiving PCs: Box ordered,monster will be receiving/backend, the new box will be switching.  
 * Clarify what we need in terms of network HW - ongoing.
-* Crate and crate controller on the way to Mainz.
+* Crate and crate controller on the way to Mainz.  
+    *Crate has arrived, Stefan has a first controller firmware ready*
 * HD will produce crates after Controller test.
 
 ### Subdetectors
 * DAB status  
+    *Pixel: Upstream version now also populated, config firmware being debugged. For the final DAB, intermediate board (cable change) was defined, 1-2 weeks design*  
+    *Tile DAB designed, will be sent out soon*  
+    *Fibre DAB at ETHZ: Clear idea of design with help from Konrad and Martin, will go to engineers*
+    *QSH-doubling-up can be used for tests without backplane*  
 
 ## Firmware status and to dos
 * Remote programming of FEBs (Nik)  
-* Pixel configuration (Luigi/Martin)  
+   *Making good progress, should have something by the end of the week*
+* Pixel configuration (Luigi/Martin)
+   *Martin stil debugging - documentation and MuPix8DAQ code contain bugs, now comparing waveforms, so far no success. Protocol seems fine, just speed is different*   
 * Tile configuration (Konrad/Tiancheng)
+    *Not much news*
 * Fibre configuration (Lukas, Yannick, Cristina, no one taking full responsibility)  
-* Pixel frontend (Nik/Sebastian/Martin/...)  
+   *Not much news*
+* Pixel frontend (Nik/Sebastian/Martin/...)
+    *Waiting for config*  
 * MuTrig frontends will use sorting. To be done:
     * Receiver and channel multiplexer (Konrad ?)
     * PRBS decoder (Konrad, available)
     * Lapse correction, divide by 5 (Marius)
     * Sorter (Nik)
 * Merging firmware status (Marius)  
+    *Ready for tests, Alex is moving to PCIe40 board, transceivers now ok*
 * Farm firmware status (Marius)
-* Define and implement error conditions leading to run stops (Marius, ...)     
+    *Banks for tiles and fibres need to be fully specified*
+* Define and implement error conditions leading to run stops (Marius, ...)
+    * Should be in headers/trailers when coming from the FEB, special packets to farm*
+* Alex will prepare an A10 version of the clock and reset system.     
 
 
 ## Software status and to dos
 * SQL run database: Who wants to take over?  
-* Analyzer status
+    *Maybe UK, maybe Frederik, should be fairly straightforward*
+* Analyzer status  
+    *Marius has framework and data containers ready, for MuPix also bank decoder, histograms to be done, pull request soon* 
 * what analysis should run?  
-* data formats for saving: Banks mostly defined  
-* Event display (Ben)  
+* data formats for saving: Banks mostly defined
+    *Check timing detectors*  
+* Event display (Ben)
+    *Should use analyzer framework*  
 * Alarms and soft interlocks to be defined
+* Farm software will read bunches of data depending on rate
 
 ## Documentation
 * Please write things down here
@@ -67,12 +86,12 @@ In what state is the hardware, who will bring what to PSI
 * ONGOING Pixel configuration via FEB/DAB (Luigi, Martin, ...)
 * Pixel RO via FEB/DAB (Luigi, Martin, ...)
 * Pixel sorter test (Nik + ...)
-* Tile configuration via FEB/DAB (Tiancheng, Konrad)
+* ONGOING Tile configuration via FEB/DAB (Tiancheng, Konrad)
 * Tile RO via FEB/DAB (Tiancheng, Konrad)
-* Fibre configuration via FEB/DAB (Lukas, Yannick)
+* ONGOING Fibre configuration via FEB/DAB (Lukas, Yannick)
 * Fibre RO via FEB/DAB (Lukas, Yannick)
 * Data chain FEB -> Switching Board -> Farm (Marius, Alex)
-* DDR3 buffering of receiving board (Marius)
+* ONGOING DDR3 buffering of receiving board and bank building (Marius)
 * Readout from DDR3 buffer (Marius, Nik)
 * Tile, Fibre, Pixel running together (all)
 
