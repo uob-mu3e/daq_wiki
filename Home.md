@@ -10,6 +10,8 @@ This is a trial for the Mu3e DAQ manual
 * [SQL run database](SQL run data base)
 * [MuTrig sorting](MuTrig sorting)
 
+* [Minimal slow control testing setup](Minimal slow control testing setup)
+
 
 ## Housekeeping
 
