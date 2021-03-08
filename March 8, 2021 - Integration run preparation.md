@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present: *
+*Present: Stefan, Lukas, Marius, Alex, Luigi, Ben, Konrad, Sebastian, Martin, Tiancheng, Cristina, Frederik, Nik*
 
 ## Hardware status and to dos
 
@@ -10,17 +10,27 @@ In what state is the hardware, who will bring what to PSI
 * Clarify what we need in terms of network HW - see pull request to spec book. Will probably not buy a 10G switch for the spring.
 * Crate and crate controller in Mainz, tests so far ok.  
 * HD will produce crates after Controller test.
+* Mz will provide a few dozen TB of local storage in a raid.
 
 ### Subdetectors
-* DAB status  
+* Pixel DAB:  
+   *Luigi and Martin debuggin, so far PLL refused to lock. Resolved just after meeting (inverted reset). Signal look good already befor the equalizer.*
+* Tile DAB:
+   *Manufactured, on the way to HD, assembly this week, testing to start soon*
+* Fibre DAB:
+   *Lukas: Board is with engineers at ETH, second version started by Lukas. Where to find CAD of the cooling adaptors? Best inquire directly with Stefan Hetzel/Simon Muley at HD. Cooling adaptors come from HD if the chips are placed as for the pixels. Contact Martin for pinout questions*
    
 ## Firmware status and to dos
 * Remote programming of FEBs (Nik)  
-   *Took longer than expected, but getting there*
-* Pixel configuration (Luigi/Martin)
-* Tile configuration (Konrad/Tiancheng)
+   *Took longer than expected, but getting there... slowly*
+* Pixel configuration (Luigi/Martin)  
+    *Mostly working*
+* Tile configuration (Konrad/Tiancheng)  
+   *To be tested with DAB*
 * Fibre configuration (Lukas, Yannick, Cristina, no one taking full responsibility)  
+   *To be tested with DAB*
 * Pixel frontend (Nik/Sebastian/Martin/...)
+   *Tests when configuration ok*
 * MuTrig frontends will use sorting. To be done:
     * Receiver and channel multiplexer (Konrad ?)
     * PRBS decoder (Konrad, available)
@@ -28,8 +38,10 @@ In what state is the hardware, who will bring what to PSI
     * Sorter (Nik)
 * Merging firmware status (Marius)  
 * Farm firmware status (Marius)
-* Reduced size test systems (Alex, Nik)     
-
+* Reduced size test systems (Alex, Nik)
+    * Could add clock distribution to Nik's minimal system*     
+* Histogramming on FEB
+    * Sebastian will provide a generic histogram for the online repo (common/firmware/util)*
 
 ## Software status and to dos
 * SQL run database: Who wants to take over?  
@@ -71,4 +83,4 @@ In what state is the hardware, who will bring what to PSI
 
 # Future meetings
 
-* Next in two weeks?
+* Next in two weeks, then maybe weekly
