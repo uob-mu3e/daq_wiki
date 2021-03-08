@@ -33,7 +33,7 @@ In what state is the hardware, who will bring what to PSI
 
 ## Software status and to dos
 * SQL run database: Who wants to take over?  
-* Analyzer status  
+* Analyzer status [manalyzer](manalyzer Mu3e)
 * what analysis should run?  
 * data formats for saving: Banks mostly defined
 * Event display (Ben)
