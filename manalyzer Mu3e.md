@@ -7,15 +7,15 @@
 ![screenshot_20210308_140806.png](https://bitbucket.org/repo/7zKBgbq/images/2183843815-screenshot_20210308_140806.png)
 
 # Quick-Start Histograms/Analysis #
-* follow docs/midas.md
-* Change analyzer/analyzer/data_objects/histograms/src/TMupixDQHistograms.cpp for adding histograms
+* Follow docs/midas.md to setup the analyzer
+* You can add histograms to existing classes like TMupixDQHistograms.cpp. Therefore you need to change the functions:
 ```
 #!c++
 TMupixDQHistogramManager::CreateHistograms()
 TMupixDQHistogramManager::UpdateHistograms(MupixHit& hit)
 
 ```
-* If you want to create a new histogram type (TNewHistogram) than you need to create a new class like the TMupixDQHistogram and store it in analyzer/analyzer/data_objects/histograms/. Than you need to add the new histogram also to IntRunAnalysis (moduls.h).
+* If you want to create a new histogram type (TNewHistogram), you need to create a new class like the TMupixDQHistogram and store it in data_objects/histograms. Than you need to add the new histogram to IntRunAnalysis (moduls.h).
 
 ```
 #!c++
