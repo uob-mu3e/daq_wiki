@@ -15,29 +15,53 @@ TMupixDQHistogramManager::CreateHistograms()
 TMupixDQHistogramManager::UpdateHistograms(MupixHit& hit)
 
 ```
-* If you want to create a new histogram type than you need to create a new class like the TMupixDQHistogram and place the creation in the IntRunAnalysis. You can also change the folder with the make_or_get_dir function:
+* If you want to create a new histogram type (TNewHistogram) than you need to create a new class like the TMupixDQHistogram and store it in analyzer/analyzer/data_objects/histograms/. Than you need to add the new histogram also to IntRunAnalysis (moduls.h).
+
+```
+#!c++
+
+class IntRunAnalysis: public TARunObject
+{
+public:
+
+   ...
+
+   // histograms produced by this module
+   TNewHistogram m_TNewHistogram;
+
+};
+```
+
+* To create your histogram you need to change the function:
 ```
 #!c++
 
 IntRunAnalysis::BeginRun(TARunInfo* runinfo){
-  printf("IntRunAnalysis::BeginRun, run %d, file %s\n", runinfo->fRunNo, runinfo->fFileName.c_str());
-  
-	// select correct ROOT directory
-	TDirectory* d_root=make_or_get_dir("", gDirectory);
-	TDirectory* d=make_or_get_dir("Pixel_DQ_histograms", d_root);
-	d->cd();
-	// PIXEL create histograms
-	// DQ Histograms
-	if ( pixelDQHistograms ) {
-		m_Pixel_DQ_Histo.SetnLayer(nPixelLayer);
-		m_Pixel_DQ_Histo.SetnPixelPerLayer(nPixelPerLayer);
-		m_Pixel_DQ_Histo.CreateHistograms();
-	}
+   printf("IntRunAnalysis::BeginRun, run %d, file %s\n", runinfo->fRunNo, runinfo->fFileName.c_str());
+   
+   // select new ROOT directory
+   TDirectory* d_root=make_or_get_dir("", gDirectory);
+   TDirectory* d=make_or_get_dir("YOUR_NEW_HISTOGRAM", d_root);
+   d->cd();
+   // YOUR_NEW_HISTOGRAM
+   // ...
+}
+```
+* To fill your histogram you need to change the IntRunAnalyzer again:
 
-        TDirectory* d_root=make_or_get_dir("", gDirectory);
-	TDirectory* d=make_or_get_dir("YOUR_NEW_HISTOGRAM", d_root);
-	d->cd();
-	// YOUR_NEW_HISTOGRAM
-        // ...
+```
+#!c++
+
+TAFlowEvent* IntRunAnalysis::AnalyzeFlowEvent(TARunInfo* runinfo, TAFlags* flags, TAFlowEvent* flow)
+{
+   // New Histogram
+   // crap your physics event
+   MupixDataFlow* pixelFlow = flow->Find<MupixDataFlow>();
+   // Update Histograms
+   // loop over hits in container
+   pixelFlow->DataContainer.ForEachHit([&](MupixHit& hitPix)->int{
+      m_TNewHistogram.UpdateHistograms(hitPix);
+      return 0;
+   });
 }
 ```
