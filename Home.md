@@ -11,7 +11,7 @@ This is a trial for the Mu3e DAQ manual
 * [MuTrig sorting](MuTrig sorting)
 
 * [Minimal slow control testing setup](Minimal slow control testing setup)
-
+* [manalyzer](manalyzer Mu3e)
 
 ## Housekeeping
 
