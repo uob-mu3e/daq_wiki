@@ -15,7 +15,7 @@ In what state is the hardware, who will bring what to PSI
 * Fibre DAB:
    
 ## Firmware status and to dos
-* Discuss structure of repo (again), document in [Repository setup](Repository setup)
+* Discuss structure of repo (again), document in [Repository setup](Repository setup) and [Repository structure](Repository structure)
 * Remote programming of FEBs (Nik)  
    *Does now work and is reasonably fast. Please use, so we can sort out quirks*
 * Pixel configuration (Luigi/Martin)  
