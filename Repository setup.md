@@ -1,0 +1,1 @@
+Here we list what should go where in the online repo, naming conventions etc.
