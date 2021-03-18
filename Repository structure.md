@@ -1,9 +1,21 @@
-- common
-  - firmware
-    - s4
-    - a5
-    - a10
-    - util
+## Directories
+
+- `common/`
+  - `firmware/`
+    - `assignments/` (pin assignments for different boards)
+    - `s4/`
+      - `ip/` (Stratix IV IPs)
+      - xcvr, etc.
+      - `include.qip`
+    - `a5/`
+      - `ip/` (Arria V IPs)
+      - xcvr, etc.
+    - `a10/`
+      - `ip/`
+      - xcvr, hex2seg7, etc.
+    - `swb/` (switching board components)
+    - `feb/` (FEB components)
+    - `util/` (components that do not depends on board or subsystem)
   - libmudaq
 - switching_pc
 - fe_board
