@@ -1,0 +1,9 @@
+- common
+  - firmware
+    - s4
+    - a5
+    - a10
+    - util
+  - libmudaq
+- switching_pc
+- fe_board
