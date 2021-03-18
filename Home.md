@@ -4,6 +4,7 @@ This is a trial for the Mu3e DAQ manual
 
 ## Sections
 
+* [Repository structure](Repository structure)
 * [Repository setup](Repository setup)
 * [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
 * [Missing hardware](Missing hardware)
