@@ -24,3 +24,7 @@ And directories with service functions:
 * 'backend_pc/midas_fe/raspberrypi' where does that belong?
 * 'backend_pc/midas_fe/MpTuneDACs' should probably go to the switching pc
 * 'frontends' is this just a relic than can go?
+
+# Directory structure #
+
+[Repository structure](Repository structure)
