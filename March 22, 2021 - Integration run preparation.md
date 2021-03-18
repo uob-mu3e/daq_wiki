@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present: *
+*Present:*
 
 ## Hardware status and to dos
 
