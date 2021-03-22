@@ -10,33 +10,33 @@ In what state is the hardware, who will bring what to PSI
 * Backplane status  
     *Backplane so far ok except for short on the temperature measurement circuit for the FEB-off state, SPI to be tested, waiting fro firmware from Stefan*
 
-* PCs:
+* PCs:  
     *Mainz today received a server capable of 8x8x PCIe bifurcation. Alex will try, Nik will install Leap 14.2. Mainz considers an extra Pizza Box for Networking*
 
 ### Subdetectors
-* Pixel DAB: 
+* Pixel DAB:  
     *Final DAB under production, several grounding paths foreseen. Lab version works ok, version for final detector needs more attention to grounding* 
 * Tile DAB:  
     *In hand, power consupmtion as expected, to be tested further*
-* Fibre DAB:
+* Fibre DAB:  
     *Delayed components due to power loss in Texas. Mechanical constraints for final version received*
    
 ## Firmware status and to dos
-* Discuss structure of repo (again), document in [Repository setup](Repository setup) and [Repository structure](Repository structure)
+* Discuss structure of repo (again), document in [Repository setup](Repository setup) and [Repository structure](Repository structure)  
    *Generally agreed on, some detail changes requested - please note them and other requests under the above links. Chnages will be implemented next week.*
 * Remote programming of FEBs (Nik)  
    *Does now work and is reasonably fast. Please use, so we can sort out quirks*
 * Pixel configuration (Luigi/Martin)  
    *Done and working, some address scheme simplification planned*
-* Tile configuration (Konrad/Tiancheng)
+* Tile configuration (Konrad/Tiancheng)  
    *Nios software ported to new FEB, to be tested*  
-* NIOS software structure:
+* NIOS software structure:  
    *Many includes, sometimes without proper guards, no proper filtering of warnings. Alex: A lot of this due to Altera framework, but some improvements possible; will investigate*
-* Fibre configuration (Lukas, Yannick, Cristina, no one taking full responsibility)
+* Fibre configuration (Lukas, Yannick, Cristina, no one taking full responsibility)  
    *Could get started on NIOS software whilst waiting for power in Texas*  
 * Pixel frontend (Nik/Sebastian/Martin/...)  
    * Martin testing, finding Nik's bugs. Progress during the meeting: We get output with the right protocol, but sometimes Hit TS and subheader TS do not match*
-* MuTrig frontends will use sorting. To be done:
+* MuTrig frontends will use sorting. To be done:  
     * Receiver and channel multiplexer (Konrad)
     * PRBS decoder (Konrad, available)
     * Lapse correction, divide by 5 (Marius)
@@ -44,9 +44,9 @@ In what state is the hardware, who will bring what to PSI
        *To be done once pixel sorter is running ok*
 * Switchin board firmware status (Marius)  
    *Data path working in simulation and in HW using data generator, to be tested with MuPix still this week*   
-* Farm firmware status (Marius)
+* Farm firmware status (Marius)  
 * Reduced size test systems (Alex, Nik)     
-* Histogramming on FEB
+* Histogramming on FEB  
 
 ## Software status and to dos
 * SQL run database: Who wants to take over?  
