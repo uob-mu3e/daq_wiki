@@ -17,7 +17,7 @@
     * `firmware/`
         * `assignments/` (pin assignments for different boards)
         * `registers/` (all register used in the project)
-        * `constants/` (all constants used in the project)
+        * `constants/` (all constants used on more than 1 board)
         * `a5/`
             * `ip/` (Arria V IPs)
             * `tb/` (simulation)
@@ -31,7 +31,7 @@
             * `Tile/`
                 * `tb/` (simulation)
                 * `...`
-            * `common/` (stuff which is used on more than 1 board type)
+            * `common/` (stuff which is used on more than 1 FEB board type)
                 * `tb/` (simulation)
                 * `MuTrig/`?
                 * `Sorter/`
