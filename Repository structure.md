@@ -2,8 +2,8 @@
 - `fe_board/`
     * `fe_malibu/`
         * `software/`
-        * `app_src/`
-        * `include` -> lib/firmware/include/
+            * `app_src/`
+            * `include` -> lib/firmware/include/
         * `top.vhd`
         * `top.qsf` (links to include.qip files)
         * `Makefile`
