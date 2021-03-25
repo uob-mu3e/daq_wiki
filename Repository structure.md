@@ -73,6 +73,6 @@
 
 ## Comments
 
-- [AK] It is now possible to set the values of `APP_SRC` in `Makefile`,
+- [AK] It is now possible to set the values of `SRC_DIR` in `Makefile`,
   which allows to put sources directly into `software/` directory (instead of `software/app_src/`).
   This can also be used as default.
