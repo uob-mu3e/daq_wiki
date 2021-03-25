@@ -70,3 +70,9 @@
 - `farm_pc/`
     * `A10_dev`/
         * `...`
+
+## Comments
+
+- [AK] It is now possible to set the values of `APP_SRC` in `Makefile`,
+  which allows to put sources directly into `software/` directory (instead of `software/app_src/`).
+  This can also be used as default.
