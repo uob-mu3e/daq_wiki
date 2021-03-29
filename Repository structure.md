@@ -77,3 +77,4 @@
   which allows to put sources directly into `software/` directory (instead of `software/app_src/`).
   This can also be used as default.
 - [AK] how about removing FE v1 firmware, and using `fe/mupix`, `fe/scifi`, `fe/tiles`, `fe/max10` dir names
+- [AK] I would move `firmware/a5/common` to `firmware/common`, and also move `a10/swb` and `a10/farm` to `firmware/`
