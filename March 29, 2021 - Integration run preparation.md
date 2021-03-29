@@ -32,7 +32,8 @@ In what state is the hardware, who will bring what to PSI
 * Switching board firmware status (Marius)  
 * Farm firmware status (Marius)  
 * Reduced size test systems (Alex, Nik)     
-* Histogramming on FEB  
+* Histogramming on FEB (Pixel TS: Martin)
+* FEB-sc with waitrequest (Martin) 
 
 ## Software status and to dos
 * SQL run database: Who wants to take over?  
@@ -68,7 +69,7 @@ In what state is the hardware, who will bring what to PSI
      * DONE: Firmware part
      * ONGOING: MIDAS integration of many configurations (Luigi)
 * Pixel RO via FEB/DAB (Luigi, Martin, ...)
-     * DONE: Path up to sorter almost fine
+     * DONE: Path up to SW-Board fine
 * Pixel sorter test (Martin, Nik)
      * ONGOING debugging of details
 * ONGOING Tile configuration via FEB/DAB (Tiancheng, Konrad)
