@@ -76,3 +76,4 @@
 - [AK] It is now possible to set the values of `SRC_DIR` in `Makefile`,
   which allows to put sources directly into `software/` directory (instead of `software/app_src/`).
   This can also be used as default.
+- [AK] how about removing FE v1 firmware, and using `fe/mupix`, `fe/scifi`, `fe/tiles`, `fe/max10` dir names
