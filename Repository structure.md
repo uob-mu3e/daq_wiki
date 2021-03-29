@@ -78,3 +78,4 @@
   This can also be used as default.
 - [AK] how about removing FE v1 firmware, and using `fe/mupix`, `fe/scifi`, `fe/tiles`, `fe/max10` dir names
 - [AK] I would move `firmware/a5/common` to `firmware/common`, and also move `firmware/a10/{swb,farm}` to `firmware/{swm,farm}`
+- [AK] also, I suggest using small case for directories, e.g. `mupix` instead of `Mupix`
