@@ -1,8 +1,9 @@
 # Requirements #
+
 * Front End Board
-* [A10 Dev Board](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=231&No=970#https://www.terasic.com.tw/attachment/archive/970/image/DE5a-Net_45d.jpg)
+* [A10 Dev Board](https://www.terasic.com.tw/cgi-bin/page/archive.pl?CategoryNo=231&No=970)
 * [Si5338 Clk board](https://www.silabs.com/documents/public/user-guides/Si5338-EVB.pdf)
-* Root 6 with CXX > 14
+* ROOT 6 with CXX > 14
 * Linux Kernel > 4.12
 * Quartus
 * Branch for MIDAS Software and A10 Firmware is at the moment a10_data_path
@@ -10,21 +11,27 @@
 * TODO: Detector stuff?
 
 # Quartus Setup #
-* A setup script for the quartus environment is located at `common/firmware/util/altera/quartus.sh` you can also place this to your `.bashrc`
+
+* A setup script for the quartus environment is located at
+  `common/firmware/util/altera/quartus.sh`
+  you can also place this to your `.bashrc`
 
 # Installation Hardware #
-* Programm the Clk board in such a way that it has two synchronized clk outputs (each having 125MHz). One needs to be a differential LVDS clk and the other one needs to be a CMOS output.
-(TODO: upload a configuration file here, is there soldering needed for CMOS output?)
+
+* Programm the Clk board in such a way that it has two synchronized clk outputs (each having 125MHz).
+  One needs to be a differential LVDS clk and the other one needs to be a CMOS output.
+  (TODO: upload a configuration file here, is there soldering needed for CMOS output?)
 * Connect the two clks to the FPGA Boards (TODO: add picture from the lab with the connections)
-* Remark: for the testing the A10 board standalone one can just connect the two SMA ports on the board (TODO: picture)
+* Remark: for the testing the A10 board standalone one can just connect the two SMA ports on the board
+  (TODO: picture)
 * TODO: Picture of placing the A10 board in the PC with connected power cables.
 * TODO: what is missing?
 
-
 # Installation Software #
+
 * `git clone git@bitbucket.org:mu3e/online.git`
 * `git checkout DEV-BRANCH`
-* `git submodule update —init —-recursive`
+* `git submodule update --init --recursive`
 * `mkdir build`
 * `cd build`
 * `cmake ..`
@@ -32,7 +39,8 @@
 * `make install`
 
 # Compile A10 Hardware #
-* A basic A10 board file is stored at https://seafile.rlp.net/d/399ebc0f7e5b49d59522/ at `Mu3e Firmware/SWB/ SWB_debug_sof_file/top_signaltap.sof`
+
+* A basic A10 board file is stored at <https://seafile.rlp.net/d/399ebc0f7e5b49d59522/> at `Mu3e Firmware/SWB/ SWB_debug_sof_file/top_signaltap.sof`
 * Download this file and navigate to `online/switching_pc/a10_board/`
 * Connect the A10 board via a USB cable to you PC and execute `jtagconfig` and check if the device is showing up
 * `make SOF=PATH_TO_top_signaltap.sof pgm`
@@ -53,6 +61,7 @@
 * Chang the permissions of the devices so a normal user can use them `chmod go+rw /dev/mudaq*`
 
 # Test A10 Device #
+
 * If the A10 device showed up correctly a view tests can be performed to check wheaten the device is working
 * Navigate to the build directory 
 * First lets check the PCIe registers 
@@ -63,18 +72,33 @@
 * If all of this works you can continue 
 
 # Flash A10 Board (optional) #
-* If the board is used the first time a factory firmware is loaded when starting the FPGA. Since the FPGA is used as a PCIe device a custom firmware need to be loaded to this flash so the device can be recognized as a PCIe device.
+
+* If the board is used the first time a factory firmware is loaded when starting the FPGA.
+  Since the FPGA is used as a PCIe device a custom firmware need to be loaded to this flash
+  so the device can be recognized as a PCIe device.
 * Run the commands from Compile Hardware for the A10 board
-* Open the flash GUI to flash the sof file (Firmware configuration) and elf file (software for the NIOS) to the A10. `./common/firmware/a10_tcl/program_gui.sh` (TODO: picture)
+* Open the flash GUI to flash the sof file (firmware configuration)
+  and elf file (software for the NIOS) to the A10.
+  `./common/firmware/a10_tcl/program_gui.sh`
+  (during flashing the sof will be converted to binary format,
+  split into parts of 256KB and flashed, the total number of parts is about 170,
+  you should see in the console that parts are flashed one by one
+  and it should take several minutes to complete)
+  (TODO: picture)
 * Choose the sof file and elf file you want to flash to the device and execute the flashing.
-* Make sure that the switches on the Board are placed correctly otherwise the custom firmware will not be loaded (TODO: add picture)
-* Restart the PCIe and make sure that the FPGA is also power cycled.
-* TODO: @Alex: is this correct?
+* Make sure that the switches on the Board are placed correctly
+  otherwise the custom firmware will not be loaded
+  (the dis switches are located between fpga chip and pcie edge connector,
+  all switches hava to be set to 0 position - in the direction of fpga chip)
+  (TODO: add picture)
+* After power cycling the board (restart PC), the firmware will be loaded from flash.
 
 # Compile FEB Hardware #
+
 * TODO ...
 
 # Test MIDAS with the A10 Board #
+
 * First we test the MIDAS readout with a generator from the A10 Board so make sure that you have followed all the steps for the A10 Board
 * Navigate to the build directory
 * `source set_env.sh`
@@ -87,11 +111,13 @@
 * In the MIDAS GUI you should be able to run `Start Run` now and than events should show up
 
 # Simple Readout of Detector Data #
+
 * Follow the steps for stetting up the FEB and the A10 board
 * `./farm_pc/tools/swb_dmatest 0 0 0` -> when to program enters the write file state you can kill it with `ctrl+c`
 * Check the output of `head memory_content.txt` should be different from 0x0 for the data
 * If all of this works you can check the file if the detector data is correct
 
 # MIDAS Readout with Detector Data #
+
 * Follow the section Test MIDAS with the A10 Board until start farm_fe
 * Remark: at the moment the ODB watch is not working correctly so we hardcoded the farm_fe setup. To be able to readout detector data open the file `farm_pc/midas_fe/farm_fe.cu‘ and change the line 882 to ‘mu.write_register(SWB_READOUT_STATE_REGISTER_W, 0x42)‘.
