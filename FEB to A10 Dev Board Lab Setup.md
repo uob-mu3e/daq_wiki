@@ -25,73 +25,33 @@
 * `make`
 * `make install`
 
-# Compile Hardware #
+# Compile A10 Hardware #
 * A basic A10 board file is stored at https://seafile.rlp.net/d/399ebc0f7e5b49d59522/ at `Mu3e Firmware/SWB/ SWB_debug_sof_file/top_signaltap.sof`
-* 
-* To compile the firmware 
+* Download this file and navigate to `online/switching_pc/a10_board/`
+* Connect the A10 board via a USB cable to you PC and execute `jtagconfig` and check if the device is showing up
+* `make SOF=PATH_TO_top_signaltap.sof pgm`
+* `make app_upload`
+* `make terminal`
+* Now the NIOS terminal of the A10 board should show up (TODO: add picture)
+
+
+# Compile FEB Hardware #
+* TODO ...
+
+# Flash A10 Board (optional and need to be done only once) #
+* If the board is used the first time a factory firmware is loaded when starting the FPGA. Since the FPGA is used as a PCIe device a custom firmware need to be loaded to this flash so the device can be recognized as a PCIe device.
+* Run the commands from Compile Hardware for the A10 board
+* Open the flash GUI to flash the sof file (Firmware configuration) and elf file (software for the NIOS) to the A10. `./common/firmware/a10_tcl/program_gui.sh` (TODO: picture)
+* Choose the sof file and elf file you want to flash to the device and execute the flashing.
+* TODO: @Alex: is this correct?
+
 
 # Start MIDAS #
+* Navigate to the build directory
 * `source set_env.sh`
+* `cd -`
 * `source start_daq.sh`
 * Now a lot of Midas Frontends are starting. You should be able to see them now under localhost:8080
  (TODO: add picture)
-* Open a new Terminal and navigate to the build directory and again `source set_env.sh`
-
-
-
-```
-#!c++
-TMupixDQHistogramManager::CreateHistograms()
-TMupixDQHistogramManager::UpdateHistograms(MupixHit& hit)
-
-```
-* If you want to create a new histogram type (TNewHistogram), you need to create a new class like the TMupixDQHistogram and store it in data_objects/histograms. Than you need to add the new histogram to IntRunAnalysis (moduls.h).
-
-```
-#!c++
-
-class IntRunAnalysis: public TARunObject
-{
-public:
-
-   ...
-
-   // histograms produced by this module
-   TNewHistogram m_TNewHistogram;
-
-};
-```
-
-* To create your histogram you need to change the function:
-```
-#!c++
-
-IntRunAnalysis::BeginRun(TARunInfo* runinfo){
-   printf("IntRunAnalysis::BeginRun, run %d, file %s\n", runinfo->fRunNo, runinfo->fFileName.c_str());
-   
-   // select new ROOT directory
-   TDirectory* d_root=make_or_get_dir("", gDirectory);
-   TDirectory* d=make_or_get_dir("YOUR_NEW_HISTOGRAM", d_root);
-   d->cd();
-   // YOUR_NEW_HISTOGRAM
-   // ...
-}
-```
-* To fill your histogram you need to change the IntRunAnalyzer again:
-
-```
-#!c++
-
-TAFlowEvent* IntRunAnalysis::AnalyzeFlowEvent(TARunInfo* runinfo, TAFlags* flags, TAFlowEvent* flow)
-{
-   // New Histogram
-   // crap your physics event
-   MupixDataFlow* pixelFlow = flow->Find<MupixDataFlow>();
-   // Update Histograms
-   // loop over hits in container
-   pixelFlow->DataContainer.ForEachHit([&](MupixHit& hitPix)->int{
-      m_TNewHistogram.UpdateHistograms(hitPix);
-      return 0;
-   });
-}
-```
+* Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -`.
+*
