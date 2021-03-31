@@ -7,6 +7,9 @@
 * Quartus
 * TODO: Detector stuff?
 
+# Quartus Setup #
+* A setup script for the quartus environment should be located at `common/firmware/util/altera/quartus.sh` you can also place this to you `.bashrc`
+
 # Installation Hardware #
 * Programm the Clk board in such a way that it has two synchronized clk outputs (each having 125MHz). One needs to be a differential LVDS clk and the other one needs to be a CMOS output.
 (TODO: upload a configuration file here)
@@ -45,11 +48,15 @@
 * `./load_mudaq.sh` -> loads the driver of the FPGA device
 * Chang the permissions `chmod go+rw /dev/mudaq*`
 
-# Test A10 DMA #
-
-
-# Compile FEB Hardware #
-* TODO ...
+# Test A10 Device #
+* If the A10 device showed up correctly a view tests can be performed to check wheaten the device is working
+* Navigate to the build directory 
+* First lets check the PCIe registers 
+* `./farm_pc/tools/rw rr 0x1` -> should show a hex value != 0x0
+* Now lets try to readout the DMA buffer with generated data
+* `./farm_pc/tools/swb_dmatest 2 0 0` -> when to program enters the write file state you can kill it with `ctrl+c`
+* Check the output of `head memory_content.txt` should be different from 0x0 for the data
+* If all of this works you can continue 
 
 # Flash A10 Board (optional and need to be done only once) #
 * If the board is used the first time a factory firmware is loaded when starting the FPGA. Since the FPGA is used as a PCIe device a custom firmware need to be loaded to this flash so the device can be recognized as a PCIe device.
@@ -58,13 +65,25 @@
 * Choose the sof file and elf file you want to flash to the device and execute the flashing.
 * TODO: @Alex: is this correct?
 
+# Compile FEB Hardware #
+* TODO ...
 
-# Start MIDAS #
+# Test MIDAS with the A10 Board #
+* First we test the MIDAS readout with a generator from the A10 Board so make sure that you have followed all the steps for the A10 Board
 * Navigate to the build directory
 * `source set_env.sh`
 * `cd -`
 * `source start_daq.sh`
 * Now a lot of Midas Frontends are starting. You should be able to see them now under localhost:8080
  (TODO: add picture)
-* Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -`
-* Start the
+* Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -` now you can run `farm_fe`
+* Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -` start the analyzer with `modules/analyzer/analyzer/analyzer_mu3e -R8088`. Now a THttpServer should be started at `localhost:8088`
+* In the MIDAS GUI you should be able to run `Start Run` now and than events should show up
+
+# Simple Readout of Detector Data #
+* Follow the steps for stetting up the FEB and the A10 board
+* `./farm_pc/tools/swb_dmatest 0 0 0` -> when to program enters the write file state you can kill it with `ctrl+c`
+* Check the output of `head memory_content.txt` should be different from 0x0 for the data
+* If all of this works you can check the file if the detector data is correct
+
+# MIDAS Readout with Detector Data #
