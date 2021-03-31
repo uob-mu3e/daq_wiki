@@ -5,6 +5,8 @@
 * Root 6 with CXX > 14
 * Linux Kernel > 4.12
 * Quartus
+* Branch for MIDAS Software and A10 Firmware is at the moment a10_data_path
+* Branch for the FEB Firmware is at the moment v0.11_dev
 * TODO: Detector stuff?
 
 # Quartus Setup #
@@ -91,3 +93,5 @@
 * If all of this works you can check the file if the detector data is correct
 
 # MIDAS Readout with Detector Data #
+* Follow the section Test MIDAS with the A10 Board until start farm_fe
+* Remark: at the moment the ODB watch is not working correctly so we hardcoded the farm_fe setup. To be able to readout detector data open the file `farm_pc/midas_fe/farm_fe.cu‘ and change the line 882 to ‘mu.write_register(SWB_READOUT_STATE_REGISTER_W, 0x42)‘.
