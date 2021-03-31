@@ -64,6 +64,7 @@
 * Run the commands from Compile Hardware for the A10 board
 * Open the flash GUI to flash the sof file (Firmware configuration) and elf file (software for the NIOS) to the A10. `./common/firmware/a10_tcl/program_gui.sh` (TODO: picture)
 * Choose the sof file and elf file you want to flash to the device and execute the flashing.
+* Make sure that the switches on the Board are placed correctly otherwise the custom firmware will not be loaded (TODO: add picture)
 * TODO: @Alex: is this correct?
 
 # Compile FEB Hardware #
