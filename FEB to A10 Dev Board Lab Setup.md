@@ -8,11 +8,11 @@
 * TODO: Detector stuff?
 
 # Quartus Setup #
-* A setup script for the quartus environment should be located at `common/firmware/util/altera/quartus.sh` you can also place this to you `.bashrc`
+* A setup script for the quartus environment is located at `common/firmware/util/altera/quartus.sh` you can also place this to your `.bashrc`
 
 # Installation Hardware #
 * Programm the Clk board in such a way that it has two synchronized clk outputs (each having 125MHz). One needs to be a differential LVDS clk and the other one needs to be a CMOS output.
-(TODO: upload a configuration file here)
+(TODO: upload a configuration file here, is there soldering needed for CMOS output?)
 * Connect the two clks to the FPGA Boards (TODO: add picture from the lab with the connections)
 * Remark: for the testing the A10 board standalone one can just connect the two SMA ports on the board (TODO: picture)
 * TODO: what is missing?
