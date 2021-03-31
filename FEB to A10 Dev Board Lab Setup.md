@@ -21,8 +21,9 @@
 * Programm the Clk board in such a way that it has two synchronized clk outputs (each having 125MHz).
   One needs to be a differential LVDS clk and the other one needs to be a CMOS output.
   (TODO: upload a configuration file here, is there soldering needed for CMOS output?)
-* Connect the two clks to the FPGA Boards (TODO: add picture from the lab with the connections)
-* Remark: for the testing the A10 board standalone one can just connect the two SMA ports on the board
+* Connect the two clks to the FPGA Boards (Clk_in on the A10 Board, CON5 & CON4 on the FEB)
+* Connect Pcie Power of the A10 Board
+* Remark: if you want to test the A10 board without a FEB you can just connect the two SMA ports on the board to each other
   (TODO: picture)
 * TODO: Picture of placing the A10 board in the PC with connected power cables.
 * TODO: what is missing?
