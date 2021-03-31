@@ -33,6 +33,19 @@
 * `make app_upload`
 * `make terminal`
 * Now the NIOS terminal of the A10 board should show up (TODO: add picture)
+* Close this terminal again and navigate to `common/kerneldriver`
+* `make`
+* The following lines are only possible if the A10 was flashed with a PCIe firmware before (see Flash A10 board) and you need to redo them after you programmed the device via `make pgm`
+* Since the device is reprogrammed we have to rescan the PCIe devices so the device will show up
+* First we need the find the device number `sudo lspci | grep Altera` -> "dev_number" Unassigned class [ff00]: Altera Corporation Device 0004 (rev 01) 
+* Than we need to remove this device and rescan it for this we start with `sudo su`
+* `echo 1 > /sys/bus/pci/devices/0000:"dev_number"/remove`
+* `echo 1 > /sys/bus/pci/rescan`
+* The device should now show up under /dev/mudaq one is the FPGA the other one the DMA buffer
+* `./load_mudaq.sh` -> loads the driver of the FPGA device
+* Chang the permissions `chmod go+rw /dev/mudaq*`
+
+# Test A10 DMA #
 
 
 # Compile FEB Hardware #
@@ -53,5 +66,5 @@
 * `source start_daq.sh`
 * Now a lot of Midas Frontends are starting. You should be able to see them now under localhost:8080
  (TODO: add picture)
-* Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -`.
-*
+* Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -`
+* Start the
