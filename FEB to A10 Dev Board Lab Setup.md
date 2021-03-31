@@ -15,6 +15,7 @@
 (TODO: upload a configuration file here, is there soldering needed for CMOS output?)
 * Connect the two clks to the FPGA Boards (TODO: add picture from the lab with the connections)
 * Remark: for the testing the A10 board standalone one can just connect the two SMA ports on the board (TODO: picture)
+* TODO: Picture of placing the A10 board in the PC with connected power cables.
 * TODO: what is missing?
 
 
@@ -65,6 +66,7 @@
 * Open the flash GUI to flash the sof file (Firmware configuration) and elf file (software for the NIOS) to the A10. `./common/firmware/a10_tcl/program_gui.sh` (TODO: picture)
 * Choose the sof file and elf file you want to flash to the device and execute the flashing.
 * Make sure that the switches on the Board are placed correctly otherwise the custom firmware will not be loaded (TODO: add picture)
+* Restart the PCIe and make sure that the FPGA is also power cycled.
 * TODO: @Alex: is this correct?
 
 # Compile FEB Hardware #
