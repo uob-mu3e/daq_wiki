@@ -14,6 +14,8 @@ This is a trial for the Mu3e DAQ manual
 
 * [Minimal slow control testing setup](Minimal slow control testing setup)
 * [manalyzer](manalyzer Mu3e)
+* [FEB to A10 Dev Board Lab Setup](FEB to A10 Dev Board Lab Setup)
+
 
 ## Housekeeping
 
