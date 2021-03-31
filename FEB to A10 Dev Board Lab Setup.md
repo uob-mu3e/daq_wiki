@@ -107,7 +107,7 @@
 * `make flow`
 * goto `online/fe_board/fe/software/app_src`, open `si5345_fe_v2.h` and select your clk source in lines 7-9
     * if you want to run without the A10 board, select "free running"
-    * if you want to use the A10, but you don't have a optical clock distribution, select "lvds"
+    * if you want to use the A10, but you don't have a optical clock distribution, select "lvds" and connect the lvds clock to CON4 and CON5 if the FEB
     * if you have optical clock distribution, leave the selection on "optical"
 * go back to `online/fe_board/your_subdetector`
 * `make app`
