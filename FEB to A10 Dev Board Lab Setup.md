@@ -25,6 +25,7 @@
 * Connect the two clks to the FPGA Boards (Clk_in on the A10 Board, CON5 & CON4 on the FEB)
 * Connect Pcie Power of the A10 Board
 * Remark: if you want to test the A10 board without a FEB you can just connect the two SMA ports on the board to each other
+* Remark: if you want to test the FEB (for subdet. configuration etc.) without the A10/Midas you do not need to connect a clock, proceed with "Compiling and connecting the FEB" in this case.
   (TODO: picture)
 * TODO: Picture of placing the A10 board in the PC with connected power cables.
 * TODO: what is missing?
@@ -95,9 +96,25 @@
   (TODO: add picture)
 * After power cycling the board (restart PC), the firmware will be loaded from flash.
 
-# Compile FEB Hardware #
+# Compiling and connecting the FEB #
 
-* TODO ...
+* goto `online/fe_board/your_subdetector` and execute
+* `make flow`
+* goto `online/fe_board/fe/software/app_src`, open `si5345_fe_v2.h` and select your clk source in lines 7-9
+    * if you want to run without the A10 board, select "free running"
+    * if you want to use the A10, but you don't have a optical clock distribution, select "lvds"
+    * if you have optical clock distribution, leave the selection on "optical"
+* go back to `online/fe_board/your_subdetector`
+* `make app`
+* you might consider to put some cooling solution (office ventilator etc.). The firefly modules (between jtag and sma) can get really hot.  
+* power the FEB board, 15V, 0.8 A if nothing is connected. If you have optical transceivers and subdetectors connected you have to increase the current limit (for pixel FEB roughly 1.3 A)
+* Now connect a USB-blaster to the Jtag Header (the one closer to the SMA connectors) and run `jtagconfig`
+* if the device does not show up in the jtagconfig output, disconnect the usb cable, connect the USB cable again, run jtagconfig again.
+* repeat previous step until the device shows up (please do not do this slowly, you could need 20-30 repetitions)
+* `make pgm`
+* `make app_upload`
+* `make terminal`
+`
 
 # Test MIDAS with the A10 Board #
 
