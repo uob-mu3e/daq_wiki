@@ -45,9 +45,9 @@
 * `sudo su` in the `common/kerneldriver` folder
 * `echo 1 > /sys/bus/pci/devices/0000:"dev_number"/remove`
 * `echo 1 > /sys/bus/pci/rescan`
-* The device should now show up under /dev/mudaq one is the FPGA the other one the DMA buffer
-* `./load_mudaq.sh` -> loads the driver of the FPGA device
-* Chang the permissions `chmod go+rw /dev/mudaq*`
+* Now you should have two devices under `/dev/mudaq*`. One is the FPGA the other one the DMA buffer.
+* Loading the FPGA driver with `./load_mudaq.sh`
+* Chang the permissions of the devices so a normal user can use them `chmod go+rw /dev/mudaq*`
 
 # Test A10 Device #
 * If the A10 device showed up correctly a view tests can be performed to check wheaten the device is working
