@@ -59,7 +59,7 @@
 * Check the output of `head memory_content.txt` should be different from 0x0 for the data
 * If all of this works you can continue 
 
-# Flash A10 Board (optional and need to be done only once) #
+# Flash A10 Board (optional) #
 * If the board is used the first time a factory firmware is loaded when starting the FPGA. Since the FPGA is used as a PCIe device a custom firmware need to be loaded to this flash so the device can be recognized as a PCIe device.
 * Run the commands from Compile Hardware for the A10 board
 * Open the flash GUI to flash the sof file (Firmware configuration) and elf file (software for the NIOS) to the A10. `./common/firmware/a10_tcl/program_gui.sh` (TODO: picture)
