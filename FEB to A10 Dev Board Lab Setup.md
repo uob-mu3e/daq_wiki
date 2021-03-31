@@ -3,6 +3,7 @@
 * Front End Board
 * [A10 Dev Board](https://www.terasic.com.tw/cgi-bin/page/archive.pl?CategoryNo=231&No=970)
 * [Si5338 Clk board](https://www.silabs.com/documents/public/user-guides/Si5338-EVB.pdf)
+* For SciFi: [SMB 2 and SciFi DAB](SciFi Module Board 2)
 * ROOT 6 with CXX > 14
 * Linux Kernel > 4.12
 * Quartus
