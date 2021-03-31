@@ -2,6 +2,11 @@
 
 * Front End Board
 * [A10 Dev Board](https://www.terasic.com.tw/cgi-bin/page/archive.pl?CategoryNo=231&No=970)
+* Altera USB-Blaster
+* BIDIRECTIONAL Firefly transciever
+* cooling fan ?
+* 15 V power
+* Male-Female MTP12 cable
 * [Si5338 Clk board](https://www.silabs.com/documents/public/user-guides/Si5338-EVB.pdf)
 * For SciFi: [SMB 2 and SciFi DAB](SciFi Module Board 2)
 * ROOT 6 with CXX > 14
@@ -106,7 +111,13 @@
     * if you have optical clock distribution, leave the selection on "optical"
 * go back to `online/fe_board/your_subdetector`
 * `make app`
-* you might consider to put some cooling solution (office ventilator etc.). The firefly modules (between jtag and sma) can get really hot.  
+* you might consider to put some cooling solution (office ventilator etc.). The firefly modules (between jtag and sma) can get really hot.
+* if you want to connect to the A10:
+    * you need to put a BIDIRECTIONAL !! Firefly into the slot closer to the Jtag header.
+    * line 12 of the MTP cable needs to connect to line 1 of the MTP on the Arria10
+    * if you want to provide an optical clock, do so on line 10 of the MTP cable
+    * if you do not want to provide an optical clock, you can connect directly to the arria10 with a male-female MTP12 cable, (female-female will not work, male-male will break things)
+    * make sure that you connect rx with tx lines (you can check this once the feb is powered by using a smartphone camera to look at the optical connectors. Do not look into them directly !)
 * power the FEB board, 15V, 0.8 A if nothing is connected. If you have optical transceivers and subdetectors connected you have to increase the current limit (for pixel FEB roughly 1.3 A)
 * Now connect a USB-blaster to the Jtag Header (the one closer to the SMA connectors) and run `jtagconfig`
 * if the device does not show up in the jtagconfig output, disconnect the usb cable, connect the USB cable again, run jtagconfig again.
@@ -114,7 +125,14 @@
 * `make pgm`
 * `make app_upload`
 * `make terminal`
-`
+* the processor (nios) on the FEB will need a few seconds to boot, afterwards you should end up in the main menu
+* if you do not see the main menu or you disconnected at some point and want to reconnect, press Enter after `make terminal` to print menu again, the processor will only automatically print the main menu on boot.
+* if you have the Arria10 connected and configured according to the steps above, you can go into the firefly menu now and check if you see "BC" on channel 0 of the FEB. You should do the same on the Arria, the menu there is called "xcvr". If you don't see "BC" on both sides, something with the optical connection or the clock is wrong. Check with a scope if both clock sources are synchronised in this case.
+* go to the reset menu on the nios and put the FEB into the idle state (If it booted into RESET, press "7")
+* if you have problems to put the FEB into idle, exit the nios-terminal and repeat from `make app_upload`
+* configure your subdetector using your software on the nios (or from midas)
+* To start to send data go to the reset menu and press 1,2,3 (or the start button in midas)
+* you can print the data rate of the FEB by pressing "r" in the reset menu ("q" will exit the printing)
 
 # Test MIDAS with the A10 Board #
 
