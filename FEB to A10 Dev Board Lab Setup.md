@@ -37,11 +37,12 @@
 * `make terminal`
 * Now the NIOS terminal of the A10 board should show up (TODO: add picture)
 * Close this terminal again and navigate to `common/kerneldriver`
-* `make`
+* `make` for compiling the kernel modules
 * The following lines are only possible if the A10 was flashed with a PCIe firmware before (see Flash A10 board) and you need to redo them after you programmed the device via `make pgm`
-* Since the device is reprogrammed we have to rescan the PCIe devices so the device will show up
+* Since the device is reprogrammed we have to rescan the PCIe devices.
 * First we need the find the device number `sudo lspci | grep Altera` -> "dev_number" Unassigned class [ff00]: Altera Corporation Device 0004 (rev 01) 
-* Than we need to remove this device and rescan it for this we start with `sudo su`
+* Than we need to remove this device and rescan it.
+* `sudo su` in the `common/kerneldriver` folder
 * `echo 1 > /sys/bus/pci/devices/0000:"dev_number"/remove`
 * `echo 1 > /sys/bus/pci/rescan`
 * The device should now show up under /dev/mudaq one is the FPGA the other one the DMA buffer
