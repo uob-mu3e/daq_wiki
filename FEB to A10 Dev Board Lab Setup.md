@@ -16,6 +16,8 @@
 * Branch for the FEB Firmware is at the moment v0.11_dev
 * TODO: Detector stuff?
 
+![9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min 2.jpeg](https://bitbucket.org/repo/7zKBgbq/images/2870080575-9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min%202.jpeg)
+
 # Quartus Setup #
 
 * A setup script for the quartus environment is located at
