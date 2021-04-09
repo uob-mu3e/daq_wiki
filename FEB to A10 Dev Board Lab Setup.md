@@ -181,3 +181,4 @@
  `export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"`
  `export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"`
  `export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"`
+Also you need to link openssl https://medium.com/@timmykko/using-openssl-library-with-macos-sierra-7807cfd47892
