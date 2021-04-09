@@ -99,7 +99,7 @@
   split into parts of 256KB and flashed, the total number of parts is about 170,
   you should see in the console that parts are flashed one by one
   and it should take several minutes to complete)
-  (TODO: picture)
+  ![7DF405AF-3C31-40D9-8CE5-256CC26F4949.jpeg](https://bitbucket.org/repo/7zKBgbq/images/3249624293-7DF405AF-3C31-40D9-8CE5-256CC26F4949.jpeg)
 * Choose the sof file and elf file you want to flash to the device and execute the flashing.
 * Make sure that the switches on the Board are placed correctly
   otherwise the custom firmware will not be loaded
