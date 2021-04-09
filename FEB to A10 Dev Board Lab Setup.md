@@ -52,6 +52,7 @@
 * Download this file and navigate to `online/switching_pc/a10_board/`
 * Connect the A10 board via a USB cable to you PC and execute `jtagconfig` and check if the device is showing up
 * `make SOF=PATH_TO_top_signaltap.sof pgm`
+* `make`
 * `make app_upload`
 * `make terminal`
 * Now the NIOS terminal of the A10 board should show up (TODO: add picture)
