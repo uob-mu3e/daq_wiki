@@ -37,6 +37,8 @@
 * TODO: Picture of placing the A10 board in the PC with connected power cables.
 * TODO: what is missing?
 
+![3109A2DB-A176-422C-935A-0CB2F4EBA90E.jpeg](https://bitbucket.org/repo/7zKBgbq/images/4119625022-3109A2DB-A176-422C-935A-0CB2F4EBA90E.jpeg)
+
 # Installation Software #
 
 * `git clone git@bitbucket.org:mu3e/online.git`
