@@ -180,9 +180,9 @@
 
 ```
 # Open SSL
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@YOUR_VERSION/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@YOUR_VERSION/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@YOUR_VERSION/lib/pkgconfig"
+export PATH="/usr/local/opt/openssl@YOUR_VERSION/bin:$PATH"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 ```
