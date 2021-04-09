@@ -185,3 +185,4 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl@YOUR_VERSION/lib/pkgconfig"
 export PATH="/usr/local/opt/openssl@YOUR_VERSION/bin:$PATH"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 ```
+* ROOT for Mac: use root 6.22/08 from [homebrew](https://brew.sh/index_de)
