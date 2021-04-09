@@ -16,8 +16,6 @@
 * Branch for the FEB Firmware is at the moment v0.11_dev
 * TODO: Detector stuff?
 
-![9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min 2.jpeg](https://bitbucket.org/repo/7zKBgbq/images/2870080575-9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min%202.jpeg)
-
 # Quartus Setup #
 
 * A setup script for the quartus environment is located at
@@ -30,6 +28,9 @@
   One needs to be a differential LVDS clk and the other one needs to be a CMOS output.
   (TODO: upload a configuration file here, is there soldering needed for CMOS output?)
 * Connect the two clks to the FPGA Boards (Clk_in on the A10 Board, CON5 & CON4 on the FEB)
+
+![9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min 2.jpeg](https://bitbucket.org/repo/7zKBgbq/images/2870080575-9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min%202.jpeg)
+
 * Connect Pcie Power of the A10 Board
 * Remark: if you want to test the A10 board without a FEB you can just connect the two SMA ports on the board to each other
 * Remark: if you want to test the FEB (for subdet. configuration etc.) without the A10/Midas you do not need to connect a clock, proceed with "Compiling and connecting the FEB" in this case.
