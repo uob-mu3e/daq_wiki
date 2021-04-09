@@ -16,6 +16,13 @@
 * Branch for the FEB Firmware is at the moment v0.11_dev
 * TODO: Detector stuff?
 
+# Testes OS #
+* Arch Linux
+* Open Suse 15
+* Open Suse 15.1
+* Open Suse Tumbleweed
+* Mac OS 10.15.7 (19H114) (online software)
+
 # Quartus Setup #
 
 * A setup script for the quartus environment is located at
