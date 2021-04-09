@@ -176,3 +176,8 @@
 # Known Problems #
 * Open Suse 15.1 with Kernel Version 4.12.14-lp151.28.91 the kernel headers (vanilla headers) can be somehow patched in comparison to the normal Linux headers. The dmabuf could fail for this headers. A fix here is to change the code in dmabuf.h.
 ![24B7C6E0-11E9-49AF-A6B5-C15966A9645E.jpeg](https://bitbucket.org/repo/7zKBgbq/images/3174512381-24B7C6E0-11E9-49AF-A6B5-C15966A9645E.jpeg)
+* OpenSSL for Mac you need to install it via `brew install openssl` and than set the flags in your `.bash_profile`:
+
+ `export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"`
+ `export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"`
+ `export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"`
