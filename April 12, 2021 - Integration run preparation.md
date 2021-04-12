@@ -12,7 +12,7 @@ In what state is the hardware, who will bring what to PSI
 * FEB status (ZH board?)  
    *PCBs arrived back side populated in HD. ZH board seems to be ok (male SMA plug is a pain, JTAG is very painful)*
 * PCs:  
-   * Alex has the PCIe40 board running with the new box including new fans*
+   *Alex has the PCIe40 board running with the new box including new fans*
   
 ### Subdetectors
 * Pixel DAB:  
@@ -41,7 +41,7 @@ In what state is the hardware, who will bring what to PSI
     *see above*
 * Reduced size test systems (Alex, Nik)     
 * Histogramming on FEB (Pixel TS: Martin)  
-* FEB-sc with waitrequest (Martin) 
+* FEB-sc with waitrequest (Martin)  
    *Being simulated*
 
 ## Software status and to dos
@@ -52,7 +52,7 @@ In what state is the hardware, who will bring what to PSI
 * data formats for saving: Banks mostly defined
 * Event display (Ben)
 * Alarms and soft interlocks to be defined
-* Does the analyzer compile on a MaC? Try and document.
+* Does the analyzer compile on a MaC? Try and document.  
    *Marius suceeded, needs some care with root and other packages to install. Cristina will try*
 
 ## Documentation
