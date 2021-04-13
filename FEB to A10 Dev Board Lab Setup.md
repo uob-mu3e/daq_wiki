@@ -186,3 +186,12 @@ export PATH="/usr/local/opt/openssl@YOUR_VERSION/bin:$PATH"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 ```
 * ROOT for Mac: use root 6.22/08 from [homebrew](https://brew.sh/index_de)
+* TRB3Decoder.hxx checks if you are on mac but this check fails Error is something like: [63B82F73-7370-404F-88F3-4E3716AFA672.png](https://bitbucket.org/repo/7zKBgbq/images/776263305-63B82F73-7370-404F-88F3-4E3716AFA672.png)
+Open the file and change the line to:
+```
+//#if defined(OS_LINUX) && !defined(OS_DARWIN)
+//	fData[i] = __bswap_32 (fData[i]);
+//#else
+        fData[i] = R__bswap_constant_32(fData[i]);
+//#endif
+```
