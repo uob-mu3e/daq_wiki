@@ -148,7 +148,7 @@
 * To start to send data go to the reset menu and press 1,2,3 (or the start button in midas)
 * you can print the data rate of the FEB by pressing "r" in the reset menu ("q" will exit the printing)
 
-# Test MIDAS with the A10 Board #
+# MIDAS Readout with the A10 Board #
 
 * First we test the MIDAS readout with a generator from the A10 Board so make sure that you have followed all the steps for the A10 Board
 * Navigate to the build directory
@@ -156,10 +156,12 @@
 * `cd -`
 * `source start_daq.sh`
 * Now a lot of Midas Frontends are starting. You should be able to see them now under localhost:8080
- (TODO: add picture)
+![4.png-1.png](https://bitbucket.org/repo/7zKBgbq/images/3540679211-4.png-1.png)
 * Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -` now you can run `farm_fe`
 * Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -` start the analyzer with `modules/analyzer/analyzer/analyzer_mu3e -R8088`. Now a THttpServer should be started at `localhost:8088`
 * In the MIDAS GUI you should be able to run `Start Run` now and than events should show up
+* If you want to use the datagenerator you can set this up in the ODB. A quick start with datagenerator can is given here:
+![ezgif.com-optimize(1).gif](https://bitbucket.org/repo/7zKBgbq/images/2278595132-ezgif.com-optimize%281%29.gif)
 
 # Simple Readout of Detector Data #
 
@@ -167,13 +169,6 @@
 * `./farm_pc/tools/swb_dmatest 0 0 0` -> when to program enters the write file state you can kill it with `ctrl+c`
 * Check the output of `head memory_content.txt` should be different from 0x0 for the data
 * If all of this works you can check the file if the detector data is correct
-
-# MIDAS Readout with Detector Data #
-
-* Follow the section Test MIDAS with the A10 Board until start farm_fe
-* Remark: at the moment the ODB watch is not working correctly so we hardcoded the farm_fe setup. To be able to readout detector data open the file `farm_pc/midas_fe/farm_fe.cu‘ and change the line 882 to ‘mu.write_register(SWB_READOUT_STATE_REGISTER_W, 0x42)‘.
-* QuickStart animation:
-![ezgif.com-optimize(1).gif](https://bitbucket.org/repo/7zKBgbq/images/2278595132-ezgif.com-optimize%281%29.gif)
 
 # Known Problems #
 * Open Suse 15.1 with Kernel Version 4.12.14-lp151.28.91 the kernel headers (vanilla headers) can be somehow patched in comparison to the normal Linux headers. The dmabuf could fail for this headers. A fix here is to change the code in dmabuf.h.
