@@ -161,6 +161,7 @@
 * Open a new Terminal and navigate to the build directory and again `source set_env.sh` followed by `cd -` start the analyzer with `modules/analyzer/analyzer/analyzer_mu3e -R8088`. Now a THttpServer should be started at `localhost:8088`
 * In the MIDAS GUI you should be able to run `Start Run` now and than events should show up
 * If you want to use the datagenerator you can set this up in the ODB. A quick start with datagenerator can is given here:
+
 ![ezgif.com-optimize(1).gif](https://bitbucket.org/repo/7zKBgbq/images/2278595132-ezgif.com-optimize%281%29.gif)
 
 # Simple Readout of Detector Data #
