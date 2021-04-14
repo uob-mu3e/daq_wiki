@@ -41,8 +41,6 @@
 * Connect Pcie Power of the A10 Board
 * Remark: if you want to test the A10 board without a FEB you can just connect the two SMA ports on the board to each other
 * Remark: if you want to test the FEB (for subdet. configuration etc.) without the A10/Midas you do not need to connect a clock, proceed with "Compiling and connecting the FEB" in this case.
-  (TODO: picture)
-* TODO: Picture of placing the A10 board in the PC with connected power cables.
 * TODO: what is missing?
 
 ![3109A2DB-A176-422C-935A-0CB2F4EBA90E.jpeg](https://bitbucket.org/repo/7zKBgbq/images/4119625022-3109A2DB-A176-422C-935A-0CB2F4EBA90E.jpeg)
