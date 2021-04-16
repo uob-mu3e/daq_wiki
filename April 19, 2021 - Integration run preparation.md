@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present: Alex, Cristina, Luigi, Lukas, Martin, Sebastian, Marius, Nik*
+*Present:*
 
 ## Hardware status and to dos
 
@@ -8,27 +8,20 @@ In what state is the hardware, who will bring what to PSI
 
 ### DAQ
 * Backplane status  
-   *Should arrive in HD these days*
+   *Two BPs in the mail to Mainz*
 * FEB status (ZH board?)  
-   *PCBs arrived back side populated in HD. ZH board seems to be ok (male SMA plug is a pain, JTAG is very painful)*
 * PCs:  
-   *Alex has the PCIe40 board running with the new box including new fans*
   
 ### Subdetectors
 * Pixel DAB:  
-    *Final version arrived, to be tested*
 * Tile DAB:  
-    *No report*
 * Fibre DAB:  
-    *Tests will continue once HW and PCs issues resolved. Temperature readout working*
    
 ## Firmware status and to dos
 * Structure of repo now ok? Documented in [Repository setup](Repository setup) and [Repository structure](Repository structure)  
-    *Alex has moved all software, Marius is happy with the switching board and farm firmware, Martin will now move the FEB firmware*
 * Tile configuration (Konrad/Tiancheng)   
 * Fibre configuration (Lukas, Yannick, Cristina, no one taking full responsibility)  
 * Pixel frontend (Nik/Sebastian/Martin/...)
-    *Pixel readout is possible, data coming out does not yet look ok. Some more diagnosis tools needed. Also: Channel masking. Bank reading for the analyzer has to be redone for the format from the switching board.*  
 * What do we need in terms of monitoring this?
 * MuTrig frontends will use sorting. To be done:  
     * Receiver and channel multiplexer (Konrad)
@@ -36,13 +29,10 @@ In what state is the hardware, who will bring what to PSI
     * Lapse correction, divide by 5 (Marius)
     * Sorter (Nik)  
 * Switching board firmware status (Marius)  
-   *Lab readout is working, Marius implemented new bank formats, merger is being debugged*
 * Farm firmware status (Marius)  
-    *see above*
 * Reduced size test systems (Alex, Nik)     
 * Histogramming on FEB (Pixel TS: Martin)  
 * FEB-sc with waitrequest (Martin)  
-   *Being simulated*
 
 ## Software status and to dos
 * OpenSuse Leap 15.2 is recommended for all new installations
