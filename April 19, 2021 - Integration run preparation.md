@@ -8,8 +8,8 @@ In what state is the hardware, who will bring what to PSI
 
 ### DAQ
 * Backplane status  
-   *Two BPs in the mail to Mainz*
-* FEB status (ZH board?)  
+   *Two BPs version 1.02 arrived in Mainz. Tests so far successful: SPI ok, shorts gone, board select ok (after patch on FEB)*
+* FEB status  
 * PCs:  
   
 ### Subdetectors
