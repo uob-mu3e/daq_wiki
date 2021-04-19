@@ -1,6 +1,7 @@
 # Agenda and Minutes
 
-*Present:*
+*Present:*  
+*Excused: Lukas (train trouble), Frederik and Nik (other meetings)*
 
 ## Hardware status and to dos
 
