@@ -38,7 +38,7 @@
 
 ![9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min 2.jpeg](https://bitbucket.org/repo/7zKBgbq/images/2870080575-9A8FC91E-5F00-42AE-ACE0-27D95A8E30D9-min%202.jpeg)
 
-* Connect Pcie Power of the A10 Board
+* Connect PCIe Power of the A10 Board
 * Remark: if you want to test the A10 board without a FEB you can just connect the two SMA ports on the board to each other
 * Remark: if you want to test the FEB (for subdet. configuration etc.) without the A10/Midas you do not need to connect a clock, proceed with "Compiling and connecting the FEB" in this case.
 * TODO: what is missing?
@@ -72,13 +72,13 @@
 * The following lines are only possible if the A10 was flashed with a PCIe firmware before (see Flash A10 board) and you need to redo them after you programmed the device via `make pgm`
 * Since the device is reprogrammed we have to rescan the PCIe devices.
 * First we need the find the device number `sudo lspci | grep Altera` -> "dev_number" Unassigned class [ff00]: Altera Corporation Device 0004 (rev 01) 
-* Than we need to remove this device and rescan it.
+* Then we need to remove this device and rescan it.
 * `sudo su` in the `common/kerneldriver` folder
 * `echo 1 > /sys/bus/pci/devices/0000:"dev_number"/remove`
 * `echo 1 > /sys/bus/pci/rescan`
+* Load the FPGA driver with `./load_mudaq.sh`
 * Now you should have two devices under `/dev/mudaq*`. One is the FPGA the other one the DMA buffer.
-* Loading the FPGA driver with `./load_mudaq.sh`
-* Chang the permissions of the devices so a normal user can use them `chmod go+rw /dev/mudaq*`
+* Change the permissions of the devices so a normal user can use them `chmod go+rw /dev/mudaq*`
 
 # Test A10 Device #
 
