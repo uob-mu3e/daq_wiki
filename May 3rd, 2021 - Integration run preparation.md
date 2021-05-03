@@ -1,7 +1,6 @@
 # Agenda and Minutes
 
-*Present:*
-
+*Present: Alex, Cristina, Luigi, Marius, Martin, Pirmin, Yannick, Lukas, Konrad, Nik, Frederik*
 
 ## Hardware status and to dos
 
@@ -9,41 +8,45 @@ In what state is the hardware, who will bring what to PSI
 
 ### DAQ
 * Backplane status  
+    *SPI looks ok, now needs a bit of programming on the MAX*
 * FEB status  
+    *Luigi testing at least eight boards, looking good so far*
 * PCs:  
 
 ### Subdetectors
 * Pixel DAB: 
 * Tile DAB: 
 * Fibre DAB:  
+   *Integration run DAB started. Issues with current setup persisting. MuTrig shift register seems to have half the actual length, many things tried, so far without success. Geneva will send a DAB to Konrad.*
    
+*Nik has lots of QSH/QTH 30 connectors, if you need any, let him know*
+
+*Put all schematics of PCBs that go into the integration run into Mu3e notes*
+
 ## Firmware status and to dos
 
 What is still needed? Priorities?
 
 * Structure of repo now ok? Documented in [Repository setup](Repository setup) and [Repository structure](Repository structure)  
+    *Alex has simplified the build system, some issues with Marius, to be resolved before merge. FEB directory structure still untouched*
 * Fibre configuration (Lukas, Yannick, Cristina, no one taking full responsibility)  
-   **
+   *See above*
 * Pixel frontend (Nik/Sebastian/Martin/...)
-   **
+   *Martin has sorted out most inverted data lines, Luigi will try to sort out the rest with the set-up in Heidelberg. Now a pattern is visible on the MuPix which seems MuPix related but still does not look fully healthy. Code review this Wednesday at 13:30.*
 * What do we need in terms of monitoring this?  
-   **
 * MuTrig frontends will use sorting. To be done:  
     * Receiver and channel multiplexer (Konrad)
     * PRBS decoder (Konrad, available)
     * Lapse correction, divide by 5 (Marius)
     * Sorter (Nik)  
+     *Will provide an interface soon, Konrad will help with integration*
 * Fibre frontend  
-   **
 * Switching board firmware status (Marius)
-     **  
+     *Code review last Wednesday, Marius working on TODOs*  
 * Farm firmware status (Marius)  
-   **
 * Reduced size test systems (Alex, Nik)  
 * Histogramming on FEB (Pixel TS: Martin)  
-   **
 * FEB-sc with waitrequest (Martin)  
-   **
 * *FEB NIOS terminals will not be available at PSI - write MIDAS/ODB/Custom Pages now*
 
 ## Software status and to dos
@@ -52,7 +55,7 @@ What is still needed? Priorities?
 * MIDAS  
   **
 * Analyzer status [manalyzer](manalyzer Mu3e)  
-   **
+   *Marius is updating to latest rootana. Compilation issues to be resolved.*
 * what analysis should run?  
 * data formats for saving: Banks mostly defined
 * Event display (Ben)
