@@ -47,7 +47,7 @@
 ## Infrastructure ##
 
 * :ok: FEB programming via optical
-* FEB programming via crate controller
+* :hammer: FEB programming via crate controller
 * :ok: FEB boot from SPI flash
 * :ok: FEB monitoring
 * FEB control via crate controller
@@ -57,8 +57,8 @@
 
 ## Backend software ##
 
-* Run database
-* Analyzer: Framework
+* :question: Run database
+* :ok: Analyzer: Framework
 * Analyzer: Pixels
 * Analyzer: Fibres
 * Analyzer: DAQ performance
