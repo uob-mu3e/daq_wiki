@@ -6,7 +6,7 @@
 
 ## Pixel configuration ##
 
-* SPI programming
+* :ok: SPI programming
 * Switching board to FEB
 * Midas frontend
 * Configuration management
@@ -46,11 +46,12 @@
 
 ## Infrastructure ##
 
-* FEB programming via optical
+* :ok: FEB programming via optical
 * FEB programming via crate controller
-* FEB boot from SPI flash
-* FEB monitoring
+* :ok: FEB boot from SPI flash
+* :ok: FEB monitoring
 * FEB control via crate controller
+* FEB monitoring via crate controller
 * Programming and monitoring of switching boards
 * Programming and monitoring of receiving boards
 
