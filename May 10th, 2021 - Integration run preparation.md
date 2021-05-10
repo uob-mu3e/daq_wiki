@@ -80,7 +80,7 @@
 
 ## Backend software ##
 
-* :question: Run database
+* :interrobang: Run database
 * :ok: Analyzer: Framework
 * :hammer: Analyzer: Pixels
 * :hammer: Analyzer: Fibres
