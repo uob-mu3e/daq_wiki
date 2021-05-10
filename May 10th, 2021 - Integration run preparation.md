@@ -20,14 +20,17 @@
 
 ## Fibre configuration ##
 
-* SPI programming
-* Switching board to FEB
-* Midas frontend
+* :question: SPI programming
+    * Seems to work, but can't read back (see also slides)
+* :hammer: Switching board to FEB
+* :hammer: Midas frontend
 * Configuration management
 
 ## Fibre readout ##
 
 * MuTrig to FEB
+    * :ok: with scope
+    * verify the data in NIOS
 * FEB receiver, decoder, unpacker
 * PRBS decoding
 * Lapse correction
