@@ -2,7 +2,7 @@
 
 *Present: Yannick, Alex, Gavin, Marius, Martin, Pirmin, Nik*
 
-#Legend#
+## Legend
 
 * :ok: Ready and tested
 * :electric_plug: To be integrated
