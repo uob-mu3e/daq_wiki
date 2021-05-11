@@ -37,7 +37,7 @@
 ## Fibre configuration ##
 
 * :question: SPI programming
-    *Seems to work, but can't read back (see also slides)*
+    *Seems to work, but can't read back (see [slides](https://drive.google.com/file/d/1xG1CaU0QreMAgc7ToRBm5bVD3WdRhJaP/view?usp=sharing))*
 * :hammer: Switching board to FEB
 * :hammer: Midas frontend
 * :interrobang: Configuration management
