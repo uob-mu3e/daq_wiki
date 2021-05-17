@@ -88,4 +88,4 @@
 
 # Future meetings
 
-* Next in one week
+* Next in two weeks
