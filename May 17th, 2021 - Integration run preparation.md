@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present:*
+*Present: Cristina, Gavin, Lukas, Marius, Martin, Alex, Pirmin, Yannick, Nik*
 
 ## Legend
 
@@ -20,7 +20,7 @@
 * :electric_plug: Switching board to FEB  
     *Typically not used*
 * :hammer: Midas frontend  
-    *UI missing, Luigi wanted to take care*
+    *UI missing, Luigi wanted to take care, Martin getting started*
 * :electric_plug: Configuration management  
     *Can use existing git repo, need to integrate with UI*
 * :muscle: Firmware for de-multiplexing config streams allowing parallel configuration
@@ -30,16 +30,18 @@
 * :ok: MuPix to FEB  
 * :hammer:FEB receiver, decoder, unpacker  
    *Occasional missing submatrices likely related to alignment code, Martin working on new version. With FEB timing closure, this should be fine*
-* :beetle: Sorter  
-   *Sends extra hits at the beginnig of the run*
+* :beetle: :question: Sorter  
+   *Sends extra hits at the beginnig of the run - should be fixed, but to be tested*
 * :ok: FEB to Switching Board
 
 ## Fibre configuration ##
 
 * :question: SPI programming
-    *Seems to work, but can't read back (see [slides](https://drive.google.com/file/d/1xG1CaU0QreMAgc7ToRBm5bVD3WdRhJaP/view?usp=sharing))*
-* :hammer: Switching board to FEB
-* :hammer: Midas frontend
+    *Seems to work, but can't read back. Nik thinks that polarity 0, phase 0 should work. Cherry picked commits from Konrads tile development; so far not fully successful*
+* :hammer: Switching board to FEB  
+   *Under test, MuTrig_v1 remnants removed*
+* :hammer: Midas frontend  
+   *Cristina started a custom page for configuration*
 * :interrobang: Configuration management
 
 ## Fibre readout ##
@@ -51,7 +53,7 @@
 * :electric_plug: PRBS decoding
 * :electric_plug: Lapse correction
 * :hammer: Sorter  
-    *Interface available on scifi_sorter branch, work on internals ongoing*
+    *Interface available on scifisorter branch, work on internals ongoing, integration can start*
 * :ok: FEB to Switching Board
 
 
@@ -60,11 +62,11 @@
 * :hammer: Data merge
 * :ok: Switching board to farm
 * :ok: Bank building
-* :hammer: DMA
+* :electric_plug: DDR3 and DMA
 * :hammer: Midas FE  
-   *Word based reading should be ok, ringbuffer and subheader based to be fully done*
+   *Word based reading should be ok, ringbuffer and subheader based to be fully done. Control of request FIFO to be done. To be clarified what the serial number does.*
 * :electric_plug: Event building on different machine  
-   *Should just work, but to be tested*
+   *Should just work, but to be tested (also regarding serial number)*
 
 ## Infrastructure ##
 
@@ -75,9 +77,10 @@
 * :hammer: FEB control via crate controller
 * :muscle: FEB monitoring via crate controller
 * :hammer: Programming and monitoring of switching boards  
-   NIOS link monitoring should be available on a MIDAS custom page
+   *NIOS link monitoring should be available on a MIDAS custom page; Marius will work on this once firmware is ready; programming will be via a terminal*
 * :hammer: Programming and monitoring of receiving boards
-* :hammer: Quartus licenses at PSI
+* :hammer: Quartus licenses at PSI  
+   *PSI license server available, Nik will try to create our own server once there*
 
 ## Backend software ##
 
@@ -89,4 +92,4 @@
 
 # Future meetings
 
-* Next in two weeks
+* Next in two weeks, in the meantime hijack the 16:00 operations meeting
