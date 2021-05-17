@@ -50,7 +50,8 @@
 * :electric_plug: FEB receiver, decoder, unpacker
 * :electric_plug: PRBS decoding
 * :electric_plug: Lapse correction
-* :hammer: Sorter
+* :hammer: Sorter  
+    *Interface available on scifi_sorter branch, work on internals ongoing*
 * :ok: FEB to Switching Board
 
 
