@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present: Yannick, Alex, Gavin, Marius, Martin, Pirmin, Nik*
+*Present:*
 
 ## Legend
 
