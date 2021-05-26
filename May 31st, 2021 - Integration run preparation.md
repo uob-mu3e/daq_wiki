@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present: Cristina, Gavin, Lukas, Marius, Martin, Alex, Pirmin, Yannick, Nik*
+*Present:*
 
 ## Legend
 
@@ -71,7 +71,7 @@
 ## Infrastructure ##
 
 * :ok: FEB programming via optical
-* :hammer: FEB programming via crate controller
+* :ok: FEB programming via crate controller
 * :ok: FEB boot from SPI flash
 * :ok: FEB monitoring
 * :hammer: FEB control via crate controller
@@ -79,8 +79,8 @@
 * :hammer: Programming and monitoring of switching boards  
    *NIOS link monitoring should be available on a MIDAS custom page; Marius will work on this once firmware is ready; programming will be via a terminal*
 * :hammer: Programming and monitoring of receiving boards
-* :hammer: Quartus licenses at PSI  
-   *PSI license server available, Nik will try to create our own server once there*
+* :ok: Quartus licenses at PSI  
+   *Five licenses available on mu3eBackend*
 
 ## Backend software ##
 
@@ -92,4 +92,4 @@
 
 # Future meetings
 
-* Next in a week
+* Next in a week, also join the daylies
