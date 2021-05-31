@@ -1,6 +1,6 @@
 # Agenda and Minutes
 
-*Present:*
+*Present: Alex, Lukas, Marius, Martin, Yannick, Pirmin, Cristina*
 
 ## Legend
 
@@ -16,6 +16,8 @@
 
 ## Pixel configuration ##
 
+*Martin: generate header files for midas fontends and NIOS from register VHDL, still to be done for MuPix part*
+
 * :ok: SPI programming
 * :electric_plug: Switching board to FEB  
     *Typically not used*
@@ -28,38 +30,37 @@
 ## Pixel readout ##
 
 * :ok: MuPix to FEB  
-* :hammer:FEB receiver, decoder, unpacker  
-   *Occasional missing submatrices likely related to alignment code, Martin working on new version. With FEB timing closure, this should be fine*
+* :ok:FEB receiver, decoder, unpacker  
 * :beetle: :question: Sorter  
    *Sends extra hits at the beginnig of the run - should be fixed, but to be tested*
 * :ok: FEB to Switching Board
 
 ## Fibre configuration ##
 
-* :question: SPI programming
-    *Seems to work, but can't read back. Nik thinks that polarity 0, phase 0 should work. Cherry picked commits from Konrads tile development; so far not fully successful*
-* :hammer: Switching board to FEB  
-   *Under test, MuTrig_v1 remnants removed*
+* :ok: SPI programming
+    *Works with DAB v2*
+* :electric_plug: Switching board to FEB  
+   *Bugs in RPCs found and figed, to be tested*
 * :hammer: Midas frontend  
    *Cristina started a custom page for configuration*
 * :interrobang: Configuration management
 
 ## Fibre readout ##
 
-* MuTrig to FEB  
-    * :ok: with scope
-    * :hammer: verify the data in NIOS
+* :ok: :question: :bug: MuTrig to FEB  
+    * Seems to work, but CRC errors seen. Also, pinout problems for half the module"
 * :electric_plug: FEB receiver, decoder, unpacker
 * :electric_plug: PRBS decoding
 * :electric_plug: Lapse correction
 * :hammer: Sorter  
-    *Interface available on scifisorter branch, work on internals ongoing, integration can start*
+    *Compiles, simulation soon. Can be integrated*
 * :ok: FEB to Switching Board
 
 
 ## Common readout ##
 
-* :hammer: Data merge
+* :hammer: :bug: Data merge
+    *Naming scheme fixed, one known bug to be tackled:
 * :ok: Switching board to farm
 * :ok: Bank building
 * :electric_plug: DDR3 and DMA
