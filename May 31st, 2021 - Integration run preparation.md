@@ -47,6 +47,7 @@
 
 ## Fibre readout ##
 
+* :question: The reset is distributed on the FMB with a clock fanout chip. Yannick showed that single pulses pass, however problems seen with long pulses, to be studied further (what is the optimal way to control this). For the future: Reset fanout should be DC-capable.
 * :ok: :question: :bug: MuTrig to FEB  
     * Seems to work, but CRC errors seen. Also, pinout problems for half the module"
 * :electric_plug: FEB receiver, decoder, unpacker
