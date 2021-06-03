@@ -5,3 +5,7 @@ The FEBs are connected in groups of three, sharing a feedthrough cable and a lon
 Full cabling from area to counting house:
 
 ![CableLabellingCommissioningRun.png](https://bitbucket.org/repo/7zKBgbq/images/2015064810-CableLabellingCommissioningRun.png)
+
+And in the counting house:
+
+![CablingFarmIntegrationRun.png](https://bitbucket.org/repo/7zKBgbq/images/1380911633-CablingFarmIntegrationRun.png)
