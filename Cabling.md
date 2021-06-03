@@ -8,4 +8,4 @@ Full cabling from area to counting house:
 
 And in the counting house:
 
-![CablingFarmIntegrationRun.png](https://bitbucket.org/repo/7zKBgbq/images/1380911633-CablingFarmIntegrationRun.png)
+![CablingFarmIntegrationRun.png](https://bitbucket.org/repo/7zKBgbq/images/3945253223-CablingFarmIntegrationRun.png)
