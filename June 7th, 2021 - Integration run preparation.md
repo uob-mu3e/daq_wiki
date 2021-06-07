@@ -98,7 +98,7 @@
 ## Backend software ##
 
 * :question: Status of the anayzers, what is still to be done?
-* :hammer: Run database
+* :hammer: Run database   
    *Frederik will set it up or find someone to set it up (Urs?)*
 * :ok: Analyzer: Framework
 * :hammer: Analyzer: Pixels
