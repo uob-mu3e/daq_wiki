@@ -54,7 +54,7 @@
    *CRC errors still there, but go away when switching to the long hit format. Seems like a feautre of the MuTrig firmware combination, was also observed by Konrad in the past. To be discussed with the MuTrig crew. Eye diagrams of the link (mattermost) look good.*
 * :muscle: The PRBS test (as opposed to decoder) would be nice to have, needs input from the fibre people.
 * :electric_plug: FEB receiver, decoder, unpacker
-* :question: Multiplexer 
+* :question: Multiplexer   
    *no news*
 * :electric_plug: PRBS decoding
 * :electric_plug: Lapse correction
