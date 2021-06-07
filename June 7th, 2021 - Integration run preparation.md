@@ -49,7 +49,7 @@
 
 * :interrobang: Likely only one fibre module to be installed
 * :question: Status of the reset  
-   *Martin tried various options and pulse lengths for the fibre reset on Sunday, no fully staisfiyng working point found. Konrads ps-level reset shifting firmware was adapted for the Arria V and now compiles, the reset can be shifted from the NIOS menu. How to exactly use this (in combination with the PLL test) to be discussed with Konrad.
+   *Martin tried various options and pulse lengths for the fibre reset on Sunday, no fully staisfiyng working point found. Konrads ps-level reset shifting firmware was adapted for the Arria V and now compiles, the reset can be shifted from the NIOS menu. How to exactly use this (in combination with the PLL test) to be discussed with Konrad.*
 * :question: Status of CRC errors  
    *CRC errors still there, but go away when switching to the long hit format. Seems like a feautre of the MuTrig firmware combination, was also observed by Konrad in the past. To be discussed with the MuTrig crew. Eye diagrams of the link (mattermost) look good.*
 * :muscle: The PRBS test (as opposed to decoder) would be nice to have, needs input from the fibre people.
