@@ -1,6 +1,6 @@
 The FEBs are connected in groups of three, sharing a feedthrough cable and a long cable to the counting house. Below how the fibres run in one of these groups.
 
-![FibreMapping3FEBsWithIntegrationRunPatches.png](https://bitbucket.org/repo/7zKBgbq/images/154477183-FibreMapping3FEBsWithIntegrationRunPatches.png)
+![FibreMapping3FEBsWithIntegrationRunPatches.png](https://bitbucket.org/repo/7zKBgbq/images/1004873928-FibreMapping3FEBsWithIntegrationRunPatches.png)
 
 Full cabling from area to counting house:
 
@@ -8,4 +8,4 @@ Full cabling from area to counting house:
 
 And in the counting house:
 
-![CablingFarmIntegrationRun.png](https://bitbucket.org/repo/7zKBgbq/images/1228765370-CablingFarmIntegrationRun.png)
+![CablingFarmIntegrationRun.png](https://bitbucket.org/repo/7zKBgbq/images/2432448567-CablingFarmIntegrationRun.png)
