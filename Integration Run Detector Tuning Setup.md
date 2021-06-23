@@ -6,8 +6,6 @@
 * Linux Kernel > 4.12
 * Quartus
 
-# Quartus Setup #
-
 # Installation Hardware #
 ## Clock Setup Farm & LHCb Board##
 
@@ -31,6 +29,12 @@ Users typically don't need to change anything here.
 ## MSCB Submasters ##
 
 The HV boards and crate controllers are controlled via MSCB. There are optical receivers inside the magnet, which are connected to a counterpart inside the downstairs hut, which is controlled by an MSCB submaster. You can find the MSCB software [here](https://bitbucket.org/tmidas/mscb). 
+
+# Power everything on #
+
+* Your FEB(s)
+* Your detector
+* Don't forget the chillers/helium system
 
 # Which boards/PCs to use #
 
