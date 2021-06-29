@@ -14,8 +14,7 @@
 | EXT TRG OFFSET    |configuration of external trigger|           |
 | EXT TRG ENDT      |              |           |
 | DEBUG             |              |           |
-| PRBS_SINGLE       |only one PRBS event per frame|In the PRBS_DEBUG mode, if PRBS_SINGLE is selected,
-then there will be only 1 48-bit PRBS data in each data frame.|
+| PRBS_SINGLE       |only one PRBS event per frame|In the PRBS_DEBUG mode, if PRBS_SINGLE is selected, then there will be only 1 48-bit PRBS data in each data frame.|
 | EXT TRG           |              |           |
 | GEN IDLE          |enables comma word in LVDS data stream|           |
 | DIS COARSE        |              |           |
@@ -75,3 +74,5 @@ and TDC. This settting should match with TDC hitlogic setting.* |
 
 
 Missing: Coincidence logic
+
+Sources: [Simon's Thesis](https://www.psi.ch/sites/default/files/import/mu3e/ThesesEN/DissertationCorrodi.pdf), [Custom page tooltips](https://bitbucket.org/mu3e/online/src/master/mhttpd/custom/mutrigTdc.html), *KIP MuTRiG configGUI* tooltips from KIP
