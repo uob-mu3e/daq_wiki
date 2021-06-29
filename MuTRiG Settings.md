@@ -11,15 +11,16 @@
 | Reset Blocks      |              |           |
 | **Global Settings** |            |           |
 | Num Asics         |              |           |
-| EXT TRG OFFSET    |              |           |
+| EXT TRG OFFSET    |configuration of external trigger|           |
 | EXT TRG ENDT      |              |           |
 | DEBUG             |              |           |
-| PRBS_SINGLE       |              |           |
+| PRBS_SINGLE       |only one PRBS event per frame|           |
 | EXT TRG           |              |           |
-| GEN IDLE          |              |           |
+| GEN IDLE          |enables comma word in LVDS data stream|           |
 | DIS COARSE        |              |           |
-| SHORT             |              |           |
-| PRBS              |              |           |
+| SHORT             |enables short event mode, only T-timestamps and
+E-flags are transmitted|Other names: Fast mode, SciFi mode|
+| PRBS              |Enables PRBS generation in MuTRiG digital part|           |
 | SYNC_CH_RST       |              |           |
 | EXT TRG ENDT SIGN |              |           |
 | PLL COARSE        |              |           |
@@ -48,27 +49,27 @@
 | TTHRESH Scale     |T-Threshold current scaling.| 0=1:1 4=1:2 (1:2 means higher maximum threshold)|
 | ETHRESH           |E-Threshold, see above. |From 0 to 255|
 | MASK              | Mask a channel (so you don't read it out) |For noisy channels|
-| SIPM              |Voltage tuning at SiPM input terminal.|  0=low voltage, 63=high voltage. Keep at values in the middle. Scaling: 0=normal, 1=higher current|
-| INPUTBIAS         |Main bias current of the input stage, affects all later stages (i.e. also thresholds, SiPM voltage) and general performance.|Higher values means higher current.|
-| POLE              |DAC setting for pole-zero cancellation feature|           |
+| SIPM              |Voltage tuning at SiPM input terminal.|  0=low voltage, 63=high voltage. Keep at values in the middle (~15, up to twenty-something). Scaling: 0=normal, 1=higher current|
+| INPUTBIAS         |Main bias current of the input stage, affects all later stages (i.e. also thresholds, SiPM voltage) and general performance.|Higher values means higher current. Set to 2, up to 4.|
+| POLE              |DAC setting for pole-zero cancellation feature|Leave this off|
 | EBIAS             |              |           |
-| AMPCOM            |Tuning the bias current of amplifers, to change the gain of the amplifer and the hysteresis of the comparator.|scale = 0: value 0: no effect, value 63: high gain, less hysteresis;scale = 3: value 0: no effect, value 63: low gain, higher hysteresis.|
-| CML               |              |           |
+| AMPCOM            |Tuning the bias current of amplifers, to change the gain of the amplifer and the hysteresis of the comparator.|scale = 0: value 0: no effect, value 63: high gain, less hysteresis;scale = 3: value 0: no effect, value 63: low gain, higher hysteresis. For now, set to 0, scale to 2|
+| CML               | Current Mode Logic |Set to middle values (8), scale to 0. For TDC injection, set to 0. |
 | AMON CTRL         |Ananlog monitor selection|0: no selection<br />1: top_monitor<br />2: input stage cascode voltage<br />3: Timing trigger monitor P<br />4: SiPM_vbias, SiPM cascode bias<br />5: Timing trigger monitor N<br />6: fb_pbias<br />7: Energy trigger monitor N|
-| COMP SPI          |Change the tail compensation effect.|1: moderate tail compensation\n2: aggressive tail compensation|
+| COMP SPI          |Change the tail compensation effect.|1: moderate tail compensation\n2: aggressive tail compensation. Not so relevant to us.|
 | TDCTEST_N         |Disable TDC test input to this channel|(0 enables TDC input and shorts with the normal hitlogic output. Note that DMON and tdc test signals are shared, so only one can be used at a time, this requires hardware changes - typically removing a jumper)|
-| S SWITCH          |Single-ended or differetial signals|           |
-| DELAY             
+| S SWITCH          |Single-ended or differetial signals| Set to 0 |
+| DELAY             |           | Set to 0 |
 | ENERGY_C_EN       |Enable the Capacitantor in the low pass filter before the E-Comparator.|           |
 | ENERGY_R_EN       |Enable the Resistor in the low pass filter before the E-Comparator.|           |
 | SENSING_HIGH_R    |Enables high impedance source in the feedback path. | Should be set to 0|
 | EDGE              |Select polarity of E-branch comparator| See also EDGE CML |
 | EDGE CML          |Invert polarity of digital signals to hitlogic in channel.|           |
-| DMON ENA          |Enable digital monitor for this channel. |Maximum one should be enabled at all times! |
+| DMON ENA          |Enable digital monitor for this channel. |**Maximum one should be enabled at all times!** Leave off with SMB|
 | DMON SW           |Digital monitor output mode. |0: Show Q and flag output (as it goes to the TDC), 1: show raw T & E flags|
 | RECV ALL          |              |           |
 | POLE_EN_N         |0: enable dac for PZC.| Only controls the dac, not the feature itself|
-| AMON_EN_N         |1: disable analog monitor output from this channel. |**Analog monitor should only be enabled for up to one channel in a chip!**|
+| AMON_EN_N         |1: disable analog monitor output from this channel. |**Analog monitor should only be enabled for up to one channel in a chip!** Leave off with SMB |
 
 
 Missing: Coincidence logic
