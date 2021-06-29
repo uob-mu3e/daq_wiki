@@ -32,7 +32,7 @@ E-flags are transmitted|Other names: Fast mode, SciFi mode|
 | VNVCOBuffer       |              |           |
 | VNVD2C            |              |           |
 | VNPCP             |              |           |
-| VNHitLogic        |              | Used to tune PLL locking at wrong frequencies. |
+| VNHitLogic        |              | Used to tune PLL locking at wrong frequencies. Increase if you see "side peaks". |
 | VNCntBuffer       |              |           |
 | VNVCODelay        |              | Used to tune PLL locking at wrong frequencies. |
 | LATCHBIAS         |              |           |
