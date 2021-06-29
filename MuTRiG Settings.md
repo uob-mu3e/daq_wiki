@@ -54,10 +54,9 @@ E-flags are transmitted|Other names: Fast mode, SciFi mode|
 | POLE              |DAC setting for pole-zero cancellation feature|Leave this off|
 | EBIAS             |              |           |
 | AMPCOM            |Tuning the bias current of amplifers, to change the gain of the amplifer and the hysteresis of the comparator.|scale = 0: value 0: no effect, value 63: high gain, less hysteresis;scale = 3: value 0: no effect, value 63: low gain, higher hysteresis. For now, set to 0, scale to 2 (turn off)|
-| CML               | Current Mode Logic |Set to middle values (8), scale to 0. For TDC injection, set to 0. From Mutrig DAQ: *Tuning the CML logic driving strength, for the communication between analog fromt-end
-and TDC. This settting should match with TDC hitlogic setting.* |
-| AMON CTRL         |Ananlog monitor selection|0: no selection<br />1: top_monitor<br />2: input stage cascode voltage<br />3: Timing trigger monitor P<br />4: SiPM_vbias, SiPM cascode bias<br />5: Timing trigger monitor N<br />6: fb_pbias<br />7: Energy trigger monitor N|
-| COMP SPI          |Change the tail compensation effect.|1: moderate tail compensation\n2: aggressive tail compensation. Not so relevant to us.|
+| CML               | Current Mode Logic |Set to middle values (8), scale to 0. For TDC injection, set to 0. From Mutrig DAQ: *Tuning the CML logic driving strength, for the communication between analog front-end and TDC. This settting should match with TDC hitlogic setting.* |
+| AMON CTRL         |Ananlog monitor selection|0: no selection; 1: top_monitor; 2: input stage cascode voltage; 3: Timing trigger monitor P; 4: SiPM_vbias, SiPM cascode bias; 5: Timing trigger monitor N; 6: fb_pbias<br />7: Energy trigger monitor N|
+| COMP SPI          |Change the tail compensation effect.|1: moderate tail compensation; 2: aggressive tail compensation. Not so relevant to us.|
 | TDCTEST_N         |Disable TDC test input to this channel|(0 enables TDC input and shorts with the normal hitlogic output. Note that DMON and tdc test signals are shared, so only one can be used at a time, this requires hardware changes - typically removing a jumper)|
 | S SWITCH          |Single-ended or differetial signals| Set to 0 |
 | DELAY             |           | Set to 0 |
