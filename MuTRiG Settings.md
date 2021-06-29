@@ -67,7 +67,7 @@ E-flags are transmitted|Other names: Fast mode, SciFi mode|
 | EDGE CML          |Invert polarity of digital signals to hitlogic in channel.|           |
 | DMON ENA          |Enable digital monitor for this channel. |**Maximum one should be enabled at all times!** Leave off with SMB|
 | DMON SW           |Digital monitor output mode. |0: Show Q and flag output (as it goes to the TDC), 1: show raw T & E flags|
-| RECV ALL          |Disable Energy trigger hit validation for this channel. |When the receive all flag is set, all timestamps (T and E) are sent out.|
+| RECV ALL          | Send the hit structure of "long" events, but the *Energy timestamo* is actually the next T timestamp |  |
 | POLE_EN_N         |0: enable dac for PZC.| Only controls the dac, not the feature itself|
 | AMON_EN_N         |1: disable analog monitor output from this channel. |**Analog monitor should only be enabled for up to one channel in a chip!** Leave off with SMB |
 
