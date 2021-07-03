@@ -7,7 +7,7 @@
 | DUMMY NUM         |Number of hits to be generated per ASIC using the FPGAs dummy data generator|    |
 | PRBS decoder disable |Bypass PRBS decoder on the FPGA|           |
 | Wait for all      |Data receivers are only allowed to produce frames when all enabled receivers are locked. Helps to keep synchronization and avoid buffer overruns at start of a run.|           |
-| Wait for all sticky |Once a receiver has locked, do not stop producing data even if it the link is lost. Ready bits are reset at start of run.|           |
+| Wait for all sticky |Once a receiver has locked, do not stop producing data even if the link is lost. Ready bits are reset at start of run.|           |
 | Reset Blocks      |              |           |
 | **Global Settings** |            |           |
 | Num Asics         |              |           |
