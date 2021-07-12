@@ -1,4 +1,4 @@
-Present:
+Present: *Frank, Alex, Cristina, Gavin, Lukas, Marius, Martin, Sebastian, Thomas, Yannick, Nik*
 
 # Data status and processing #
 
