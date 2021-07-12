@@ -55,4 +55,6 @@ Present:
 
 # Where is MIDAS in the future? #
 
+# Planned set-ups #
+
 # What next? #
