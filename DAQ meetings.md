@@ -13,3 +13,4 @@
 * [June 7th, 2021 - Integration run preparation](June 7th, 2021 - Integration run preparation)
 * [June 14th, 2021 - Integration run preparation](June 14th, 2021 - Integration run preparation)
 * [June 21st, 2021 - Integration run preparation](June 21st, 2021 - Integration run preparation)
+* [July 12th, 2021 - Integration run cleanup](July 12th, 2021 - Integration run cleanup)
