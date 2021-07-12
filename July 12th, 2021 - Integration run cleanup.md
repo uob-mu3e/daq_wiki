@@ -4,8 +4,8 @@ Present: *Frank, Alex, Cristina, Gavin, Lukas, Marius, Martin, Sebastian, Thomas
 
 * Data were copied from switch0 and backend to merlin and to Mainz.
 * RunDB was not used, esentially Marius is the run DB for the moment
-* Nik will prepare a google sheet with runDB information to be filled by Marius, Luigi,...
-[https://docs.google.com/spreadsheets/d/1MLfoeoRalqG3xdOlihH__vh-Nz2ZcfqS7bcGl2PiqWE/edit?usp=sharing](Google sheet)
+* Nik will prepare a google sheet with runDB information to be filled by Marius, Luigi,...  
+(https://docs.google.com/spreadsheets/d/1MLfoeoRalqG3xdOlihH__vh-Nz2ZcfqS7bcGl2PiqWE/edit?usp=sharing)[Google sheet]
 * Marius will produce root files with one pixel hit per event
 * Thmas will work on noise removal
 
