@@ -20,7 +20,7 @@ Alex does tagging/archiving and manages merging. Everyone else: Say what is in t
 * master    
 * v0.12_dev  
 * alex_dev  
-* int_run
+* int_run -- MK: Pull request is done
 * cherrypicking_mupix -- MM: keep until 19.07, will do a pull req next week
 * sequencer_NG  -- NB: Ongoing development
 * muSR_run - MM: tag, delete i think
@@ -30,7 +30,7 @@ Alex does tagging/archiving and manages merging. Everyone else: Say what is in t
 * environment_control
 * *Merged/archived: sorter_debug*
 * si_sticky_flags
-* daq_fixes -- NB: Is this merged?
+* daq_fixes -- NB: Is this merged? -- MK: this is fully in int_run, so if int_run is merged this can go
 * setup_mhttpd
 * martin_dev -- MM: keep until 19.07, will do a pull req next week
 * scifisorter -- MM: is an actual active branch, work ongoing, do not delete or merge 
