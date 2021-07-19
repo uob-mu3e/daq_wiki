@@ -18,6 +18,7 @@ CMake Warning (dev) at farm_pc/tools/CMakeLists.txt:6 (add_executable):
   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
 ```
+
 * Solution 1: Set CMP0115 and continue using implicit file extensions
 * Solution 2: Clean up the corresponding CMakeLists.txt and write file extensions explicitly (recommended by CMake)
 * Solution 3: Live with wall of warnings
