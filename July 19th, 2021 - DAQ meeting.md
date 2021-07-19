@@ -1,4 +1,4 @@
-Present:
+Present: *Lukas, Yannick, Alex, Frederik, Gavin, Konrad, Marius, Martin, Sebastian, Thomas, Nik*
 
 # Repo cleanup: #
 branches that are not taken care of at the moment:
@@ -23,11 +23,19 @@ CMake Warning (dev) at farm_pc/tools/CMakeLists.txt:6 (add_executable):
 * Solution 2: Clean up the corresponding CMakeLists.txt and write file extensions explicitly (recommended by CMake)
 * Solution 3: Live with wall of warnings
 
+Prefernce for solution two, solution one for where MIDAS is concerned.
+
 # Integration run analysis #
 
-# Integration run soft- and firmware consolidation #
+* Marius and Thomas are working on the run list, including pixel masking and translating this into json readable by the analyzer
+* Hot pixel masking needed before final conversion
+* Marius put instructions for the converter at [manalyzer Mu3e](manalyzer Mu3e)
 
 # Next developments #
 
-* Clock Box II
-* Switching PC in Mainz
+* Clock Box II being readied in Mainz
+* Switching PC in Mainz ordered
+* HD preparing a telescope adapter for the FEB backplane (ready in autumn)
+* Lukas has prepared an online version with external MIDAS, docu to be updated, will be merged into new development branch
+* Alex collecting everything from the integration run today, will change to new branch/tag naming scheme after that
+* Yannick is setting up the DAQ chain in Geneva, SMBs to be fetched from PSI
