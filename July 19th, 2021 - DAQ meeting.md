@@ -7,7 +7,7 @@ branches that are not taken care of at the moment:
 * iv_javascript -> SciFi, can be merged at later point (Yannick/Lukas)
 * hv_control
 * odbxx_vector -> deleted
-* combine_hamegs
+* combine_hamegs -> tagged, deleted
 
 should we delete / merge / keep them ? 
 
