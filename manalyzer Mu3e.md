@@ -81,6 +81,6 @@ TBranch* tot = tree->Branch("tot", &m_tot);
 TBranch* hitTime = tree->Branch("hitTime", &m_hitTime);
 TBranch* subHeaderTime = tree->Branch("subHeaderTime", &m_subHeaderTime);
 ```
-* For getting the working chips removed one needs to get the current mask file (in csv format) from https://docs.google.com/spreadsheets/d/1MLfoeoRalqG3xdOlihH__vh-Nz2ZcfqS7bcGl2PiqWE/edit#gid=0 and convert this to a json file with analyzer/scripts/chip_masking_csv_to_json.py
-* For converting the file to root create the folder root_output_files and run ./analyzer/analyzer_mu3e midas_file
-* For a quick analysis one can use the python script analyzer/scripts/chip_time_cor.py
+* For getting the working chips removed one needs to get the current mask file (in csv format) from [Run DB](https://docs.google.com/spreadsheets/d/1MLfoeoRalqG3xdOlihH__vh-Nz2ZcfqS7bcGl2PiqWE/edit#gid=0) and convert this to a json file with ``analyzer/scripts/chip_masking_csv_to_json.py``
+* For converting the file to root create the folder root_output_files and run ``./analyzer/analyzer_mu3e midas_file``
+* For a quick analysis one can use the python script ``analyzer/scripts/chip_time_cor.py``
