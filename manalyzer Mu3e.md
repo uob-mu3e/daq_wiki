@@ -68,9 +68,7 @@ TAFlowEvent* IntRunAnalysis::AnalyzeFlowEvent(TARunInfo* runinfo, TAFlags* flags
 
 # IntRunAna #
 * At the moment (19.07.2021) use branch midas_to_root
-* In analyzer/analyzer/config/config.json the default setup is for converting the midas file to a flat root file with the branches:   
-
-```
+* In analyzer/analyzer/config/config.json the default setup is for converting the midas file to a flat root file with the branches:   ```
 #!c++
 TBranch* runID = tree->Branch("runID", &m_runID);
 TBranch* MIDASEventID = tree->Branch("MIDASEventID", &m_MIDASEventID);
