@@ -20,3 +20,4 @@ Present:
 * MM: changed a file format in the analysis chain:
     * analyzer_mu3e    : Midas File --> flat root file (1 hit per event)
     * analyzer_cleanup : flat root file --> root file with a vector of hits per event (containing all hits of one Midas event)
+* analyzer optimization: from 15min/GB to 2min/GB
