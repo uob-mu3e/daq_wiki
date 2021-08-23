@@ -10,6 +10,7 @@ Present:
 
 # Analysis status #
 
+* Software merging for unmerged data
 * FPGA to FPGA correlations
 ![Cheese_Wed-18Aug21_16.14.png](https://bitbucket.org/repo/7zKBgbq/images/197077201-Cheese_Wed-18Aug21_16.14.png)
 ![fpga_scatter_fpga5_fpga7_run202.png](https://bitbucket.org/repo/7zKBgbq/images/1770278569-fpga_scatter_fpga5_fpga7_run202.png)
