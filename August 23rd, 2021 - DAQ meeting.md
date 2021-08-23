@@ -5,7 +5,12 @@ Present:
 * Mainz: 
 * Heidelberg Pixel:
 * Heidelberg Tiles:
-* Geneva: 
+* Geneva: (after one week of "not much going on" for this side): 
+1. clock evaluation board have been programmed, should be fine to give the 2 clocks needed. One to the A10 and the other to the FEB.
+2. realised that I need a female/male extension MTP cable, I have a male/male ...(Need to make sure it's the good orientation I think ?(line 1-12))
+3. Waiting for the backplane to complete the chain (connecting the DAB and our SMB to it).
+
+Next step is to see main menu of nios terminal, when the A10 is connected.
 * Zürich: 
 
 # Analysis status #
