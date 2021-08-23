@@ -12,6 +12,7 @@ Present:
 
 3. Waiting for the backplane to complete the chain (connecting the DAB and our SMB to it).
 Next step is to see main menu of nios terminal, when the A10 is connected.
+
 * Zürich: 
 
 # Analysis status #
