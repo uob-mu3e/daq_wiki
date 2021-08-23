@@ -16,3 +16,4 @@
 * [July 12th, 2021 - Integration run cleanup](July 12th, 2021 - Integration run cleanup)
 * [July 19th, 2021 - DAQ meeting](July 19th, 2021 - DAQ meeting)
 * [August 9th, 2021 - DAQ meeting](August 9th, 2021 - DAQ meeting)
+* [August 23rd, 2021 - DAQ meeting](August 23rd, 2021 - DAQ meeting)
