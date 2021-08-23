@@ -1,8 +1,8 @@
-Present: 
+Present: * Martin, Thomas, Gavin, Cristina, Marius, Alex, Nik*
 
 # Status of set-ups #
 
-* Mainz: 
+* Mainz: *Clock box comin along, final parts arrived, should be ready in a week*
 * Heidelberg Pixel:
 * Heidelberg Tiles:
 * Geneva: (after one week of "not much going on" for this side): 
@@ -29,6 +29,8 @@ Next step is to see main menu of nios terminal, when the A10 is connected.
 https://docs.google.com/document/d/1l5gFO1rGpOtRouVyYYrNM6nzgnsgNUXhypxHeIDu9O0/edit
 
 # Ongoing firmware work #
+
+* Try to understand, reproduce and fix the features seen. Start wit generators in the lab in Minz, then maybe do a dry run at PSI.
 
 # Ongoing software work #
  
