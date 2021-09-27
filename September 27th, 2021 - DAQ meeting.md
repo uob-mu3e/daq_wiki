@@ -1,10 +1,8 @@
-Present:
+Present: *Sebastian, Alex, Sean, Nik*
 
-# Status of set-ups #
+Sebastian: Heidelberg is getting the FEB adapter card for telescopes ready, will use ethernet for communciation with a PC. Sebastian hopes to have more time for firmware development in the coming semester.
 
-
-# Analysis status #
-
+Otherwise no news, beam test in Mainz being set up.
 
 # Reviews #
 
