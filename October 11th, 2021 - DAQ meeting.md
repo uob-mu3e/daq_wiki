@@ -1,11 +1,11 @@
-Present: *Sebastian, Alex, Sean, Nik*
+Present: 
 
-Sebastian: Heidelberg is getting the FEB adapter card for telescopes ready, will use ethernet for communciation with a PC. Sebastian hopes to have more time for firmware development in the coming semester.
+# Setup status #
 
-Otherwise no news, beam test in Mainz being set up.
+# Firmware developments #
+
+# Software developments #
 
 # Reviews #
 
-Proposal for next week: New sorter sequencer (Nik)
-
-Coming up: MuPix11 digital part (Heiko) - read MuPix10 in preparation.
+Proposal for next week: MuTrig lapse correction (Marius)
