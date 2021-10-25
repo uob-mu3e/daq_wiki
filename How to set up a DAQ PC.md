@@ -27,6 +27,29 @@ make geant4 -j12
 
 ```
 
+.bashrc
+
+```bash
+# setup quartus
+export INTELFPGAOCLSDKROOT="~/intelFPGA/18.1/hld"
+export QSYS_ROOTDIR="~/intelFPGA/18.1/quartus/sopc_builder/bin"
+export ALTERAPATH="~/intelFPGA/18.1"
+export ALTERAOCLSDKROOT="${ALTERAPATH}/hld"
+export QUARTUS_ROOTDIR=${ALTERAPATH}/quartus
+export SOPC_KIT_NIOS2=${QUARTUS_ROOTDIR}/../nios2eds
+export QUARTUS_ROOTDIR_OVERRIDE="$QUARTUS_ROOTDIR"
+export PATH=$PATH:${ALTERAPATH}/quartus/bin
+export PATH=$PATH:${ALTERAPATH}/nios2eds/bin
+export PATH=$PATH:${ALTERAPATH}/nios2eds/sdk2/bin
+export PATH=$PATH:${ALTERAPATH}/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin
+export PATH=$PATH:${QSYS_ROOTDIR}
+export LM_LICENSE_FILE=1800@galileo.zdv.uni-mainz.de
+
+source ~/compiled_software/root/bin/thisroot.sh
+
+```
+
+
 
 * OpenSuse 15.3
 * Separate partitions for /home and os (/)
