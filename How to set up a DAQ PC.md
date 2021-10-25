@@ -15,6 +15,9 @@ make install
 cd ~/
 
 # install root / geant4
+echo "Installing libs for root/geant (libuuid-devel)"
+sudo zypper install libuuid-devel
+
 mkdir -p ~/compiled_software
 cd ~/compiled_software
 git clone https://github.com/akozlins/dotfiles.git
