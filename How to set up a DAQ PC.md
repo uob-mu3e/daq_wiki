@@ -30,6 +30,16 @@ make geant4 -j12
 .bashrc
 
 ```bash
+#!/bin/bash
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias l='ls -la'
+
+PS1='[\u@\h \W]\$ '
+
 # setup quartus
 export INTELFPGAOCLSDKROOT="~/intelFPGA/18.1/hld"
 export QSYS_ROOTDIR="~/intelFPGA/18.1/quartus/sopc_builder/bin"
@@ -47,6 +57,21 @@ export LM_LICENSE_FILE=1800@galileo.zdv.uni-mainz.de
 
 # setup root
 source ~/compiled_software/root/bin/thisroot.sh
+
+# setup geant
+for MY_GEANT4_SH in \
+    "/usr/local/bin/geant4.sh" \
+    "$HOME/.local/bin/geant4.sh" \
+    "$HOME/.local/geant4.cern.ch/bin/geant4.sh" \
+; do
+    if [ -f "$MY_GEANT4_SH" ] && cd "$(dirname -- "$MY_GEANT4_SH")" ; then
+        . "$(readlink -f -- "$MY_GEANT4_SH")"
+        cd - > /dev/null
+        break
+    fi
+done
+
+unset -v MY_GEANT4_SH
 
 ```
 
