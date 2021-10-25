@@ -24,6 +24,20 @@ git clone https://github.com/akozlins/dotfiles.git
 cp dotfiles/dev/Makefile Makefile
 make root -j12
 make geant4 -j12
+cd ~/
+
+# install online repo
+echo "Installing online repo"
+git clone git@bitbucket.org:mu3e/online.git
+cd online
+git checkout dev
+git submodule update --init --recursive
+mkdir -p build
+cd build
+cmake ..
+make -j12
+make install
+cd ~/
 
 ```
 
