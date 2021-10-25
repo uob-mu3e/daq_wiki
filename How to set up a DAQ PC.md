@@ -53,7 +53,8 @@ export PATH=$PATH:${ALTERAPATH}/nios2eds/bin
 export PATH=$PATH:${ALTERAPATH}/nios2eds/sdk2/bin
 export PATH=$PATH:${ALTERAPATH}/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin
 export PATH=$PATH:${QSYS_ROOTDIR}
-export LM_LICENSE_FILE=1800@galileo.zdv.uni-mainz.de
+# CHANGE ME
+export LM_LICENSE_FILE=""
 
 # setup root
 source ~/compiled_software/root/bin/thisroot.sh
