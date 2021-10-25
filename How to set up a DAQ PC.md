@@ -19,8 +19,8 @@ mkdir -p ~/compiled_software
 cd ~/compiled_software
 git clone https://github.com/akozlins/dotfiles.git
 cp dotfiles/dev/Makefile Makefile
-make root
-make geant4
+make root -j12
+make geant4 -j12
 
 ```
 
