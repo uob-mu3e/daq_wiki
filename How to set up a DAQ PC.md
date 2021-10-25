@@ -3,3 +3,4 @@
 * root use https://github.com/akozlins/dotfiles/blob/master/dev/Makefile
 * OpenSuse 15.3
 * two users labor & mu3e
+* cuda
