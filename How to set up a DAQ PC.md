@@ -71,7 +71,7 @@ export PATH=$PATH:${QSYS_ROOTDIR}
 export LM_LICENSE_FILE=""
 
 # setup root
-source ~/compiled_software/root/bin/thisroot.sh
+source ~/compiled_software/root/cmake-build/bin/thisroot.sh
 
 # setup geant
 for MY_GEANT4_SH in \
