@@ -4,6 +4,7 @@ This is a trial for the Mu3e DAQ manual
 
 ## Sections
 
+* [How to set up a DAQ PC](How to set up a DAQ PC)
 * [Repository structure](Repository structure)
 * [Repository setup](Repository setup)
 * [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
