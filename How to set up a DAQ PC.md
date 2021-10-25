@@ -3,5 +3,7 @@
 * root use https://github.com/akozlins/dotfiles/blob/master/dev/Makefile
 * OpenSuse 15.3
 * two users labor (uid 11001) & mu3e (uid 11000)
+* Both with MIDAS installed in the home directory and login scripts setting the corresponding paths
+* Both with online (stable for mu3e, development for labor) installed in the home directory and login scripts setting the corresponding paths
 * cuda (if a GPU is present)
 * Quartus
