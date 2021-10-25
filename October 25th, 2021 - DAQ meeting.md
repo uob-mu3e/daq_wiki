@@ -19,4 +19,5 @@ Present: *Sebastian, Martin, Cristina, Marius, Luigi, Frederik, Yannick, Nik*
 
 # Reviews #
 
-Proposal for next week: FEB slow control part (Martin)
+FEB slow control part (Martin) - exceptionally on Wednesday at 14:30.
+Next meeting in two weeks.
