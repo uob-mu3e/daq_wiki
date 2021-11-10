@@ -16,6 +16,7 @@ Total Valid Address space| | | | 0x0000-0xFFFE
 |  |Mupix_ctrl | |  0x0400-0x0FFF  
 |  |Mupix_datapath  | | 0x1000-0xFBFF
 |  | | sorter | 0x1000-0x10FF  
+|  | | lvds_rx | 0x1100-0x11FF  
 |  Scifi/Scitile: | | |   
 |  |internal RAM | | 0x0000-0x3FFF  
 |  |scifi regs | |  0x4000-0xFBFF
