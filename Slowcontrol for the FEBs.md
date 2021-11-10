@@ -13,8 +13,8 @@ Total Valid Address space| | | 0x0000-0xFFFE
  Subdetector Block | | | 0x0000-0xFBFF  
 |  Mupix: | |   
 |  |internal RAM  | 0x0000-0x03FF  
-|  |Mupix_ctrl |  0x0400-0x08FF  
-|  |Mupix_datapath  | 0x0900-0xFBFF  
+|  |Mupix_ctrl |  0x0400-0x0FFF  
+|  |Mupix_datapath  | 0x1000-0xFBFF  
 |  Scifi/Scitile: | |   
 |  |internal RAM | 0x0000-0x3FFF  
 |  |scifi regs |  0x4000-0xFBFF
