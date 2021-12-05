@@ -22,3 +22,4 @@
 * [October 25th, 2021 - DAQ meeting](October 25th, 2021 - DAQ meeting)
 * [November 8th, 2021 - DAQ meeting](November 8th, 2021 - DAQ meeting)
 * [November 22nd, 2021 - DAQ meeting](November 22nd, 2021 - DAQ meeting)
+* [December 6th, 2021 - DAQ meeting](December 6th, 2021 - DAQ meeting)
