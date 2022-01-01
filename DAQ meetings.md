@@ -1,3 +1,9 @@
+# 2022 #
+
+* [January 3rd, 2022 - DAQ meeting](January 3rd, 2022 - DAQ meeting)
+
+# 2021 #
+
 * [February 4, 2021 - Integration run preparation](February 4, 2021 - Integration run preparation)
 * [February 22, 2021 - Integration run preparation](February 22, 2021 - Integration run preparation)
 * [March 8, 2021 - Integration run preparation](March 8, 2021 - Integration run preparation)
