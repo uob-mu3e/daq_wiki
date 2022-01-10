@@ -11,6 +11,7 @@ BVR decisions on beam times assumed to go our way.
 * Stable data taking using full chain (FEB, SW, Farm) and with MuPix and MuTrig
 
 Some comments:
+
 * Fibres should be possible with MuTrig v2 setup
 * Tiles will not have a TMB ready
 * For the farm, full data flow including DDR4 buffering would be the goal, a simple, e.g. hit multiplicity based selection on the GPU the stretch goal.
