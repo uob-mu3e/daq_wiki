@@ -32,3 +32,7 @@ Present:
 * Set-up network including dedicated gateway, do performance tests
 * Clear and re-cable the fibre fanout rack
 * Recuperate the 2-3 fibres from the area
+
+## Next week ##
+
+Analyzer Review - Marius
