@@ -1,22 +1,36 @@
-Present:
+Present: *Alex, Martin, Ann-Kathrin, Cristina, Daniel, Marius, Sebastian, Gavin, Frederik, Nik*
 
 # Firmware and Setup Status and Activities #
 
 ### Mainz ###
 * Setup from December beam running again in the lab
 * working on the points in the bitbucket issue list
+* Monitoring of link status from the common slow control in the works, will be transferred from FEBs to the A10
+* Issues with NIOS crashes on FEB will be looked at by Alex
+* Alex tried Quartus 20 and 21. NIOS software needed a fix, otherwise everything is compiling. Things are neither better or faster than with earlier versions.
 
 ### Zürich ###
+No news
 
 ### Genava ###
+Not present
 
 ### Heidelberg Pixels ###
+Daniel working on communicating with the PHY on to telescope adapter card. 
 
 ### Heidelberg Tiles ###
+Not present
+
+### KIT ###
+No plan yet
 
 # Software Status #
 
+Nik working on evaluating databases, MongoDB looks like a good match
+
 # Cosmic run checklist #
+
+Nothing to be ticked off yet, but work ongoing on many points here.
 
 ### Before we go to PSI ###
 
@@ -37,4 +51,4 @@ Present:
 
 ## Next week ##
 
-Analyzer Review - Marius
+Analyzer Review (mostly Architecture) - Marius
