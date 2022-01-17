@@ -3,6 +3,8 @@ Present:
 # Firmware and Setup Status and Activities #
 
 ### Mainz ###
+* Setup from December beam running again in the lab
+* working on the points in the bitbucket issue list
 
 ### Zürich ###
 
