@@ -10,6 +10,8 @@ Each FEB will have a 16 bit slowcontrol address space. Each address can contain 
 Total Valid Address space| | | | 0x0000-0xFFFE  
 ---------:| :----- | :----- | :----- | :-----:
  FEB common Block | | | | 0xFC00-0xFFFE  
+|  other common stuff: | | | 0xFC00-0xFEFF  
+|  Firefly: | | |  0xFF00-0xFFFE  
  Subdetector Block | | | | 0x0000-0xFBFF  
 |  Mupix: | | |  
 |  |internal RAM  | | 0x0000-0x03FF  
