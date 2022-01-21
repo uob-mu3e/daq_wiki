@@ -21,6 +21,7 @@ This is a trial for the Mu3e DAQ manual
 * [FEB TODO](FEB Todo)
 * [Crate Controller TODO](Crate Controller TODO)
 * [MuTRiG Settings](MuTRiG Settings)
+* [network tools](network tools)
 
 
 ## Housekeeping
