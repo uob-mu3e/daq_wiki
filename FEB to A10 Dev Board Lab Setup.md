@@ -87,7 +87,8 @@
 * First lets check the PCIe registers 
 * `./farm_pc/tools/rw rr 0x1` -> should show a hex value != 0x0
 * Now lets try to readout the DMA buffer with generated data
-* `./farm_pc/tools/swb_dmatest 2 0 0` -> when to program enters the write file state you can kill it with `ctrl+c`
+* Testing round robin readout: `./farm_pc/tools/swb_dmatest 2 0 0 0x1 1` -> when to program enters the wrTesting merger readout: ite file state you can kill it with `ctrl+c`
+* `./farm_pc/tools/swb_dmatest 3 0 0 0x1 1` -> when to program enters the write file state you can kill it with `ctrl+c`
 * Check the output of `head memory_content.txt` should be different from 0x0 for the data
 * If all of this works you can continue 
 
