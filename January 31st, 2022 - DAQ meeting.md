@@ -16,6 +16,10 @@ Present:
 
 # Software Status #
 
+### Heidelberg telescope upgrade ###
+* PHY Control Interface
+* New Quartus version in Mainz?
+* topic in the right domain?
 
 # Cosmic run checklist #
 
