@@ -34,8 +34,8 @@ Cristina:
 ### Geneva ###
 
 Yannick:
-* MuTrig1 evaluation working well with Stratix IV board
-* Occasional PCIe hickups. Is the PCIe interface in sync with the latest version in the MuPix8 DAQ repo? 
+* MuTrig1 evaluation working well with Flyspi board.
+* Evaluation with the Stratix IV occasional PCIe hickups. Is the PCIe interface in sync with the latest version in the MuPix8 DAQ repo? 
 
 ### Heidelberg Pixels ###
 
