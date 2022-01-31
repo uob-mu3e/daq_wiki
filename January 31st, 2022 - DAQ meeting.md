@@ -3,6 +3,9 @@ Present:
 # Firmware and Setup Status and Activities #
 
 ### Mainz ###
+* found out why our hardware Pixel masking did not work
+* will need firmware change, would go for something more "final" now
+* preliminary idea here: [Mupix Configuration](Mupix Configuration)
 
 ### Zürich ###
 
