@@ -10,7 +10,10 @@ Present:
 ### Zürich ###
 * checking the data lines with a generated idle signal from NIOS (mutrig config "ALL_OFF"). 
 * saw and decoded comma words with the oscilloscope
-* will now check signal quality (eye diagrams / bit error rates) for different lengths of samtec cable and for microtwisted pair cable 
+* checking signal quality (eye diagrams / bit error rates) for different lengths of samtec cable and for microtwisted pair cable 
+
+
+![eyediagrams.jpeg](https://bitbucket.org/repo/7zKBgbq/images/2637213142-eyediagrams.jpeg)
 
 ### Genava ###
 
