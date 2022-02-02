@@ -2,6 +2,8 @@
 
 This is a trial for the Mu3e DAQ manual
 
+* [DAQ meetings](DAQ meetings)
+
 ## Online Repository
 
 * [Repository structure](Repository structure)
@@ -16,14 +18,14 @@ This is a trial for the Mu3e DAQ manual
 
 * [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
 
-* [DAQ meetings](DAQ meetings)
-* [SQL run database](SQL run data base)
+
+
 * [Where are my bits in the sorter](Sorterbits)
 * [MuTrig sorting](MuTrig sorting)
 
 * [manalyzer](manalyzer Mu3e)
 
-* [Cabling](Cabling)
+
 
 * [FEB TODO](FEB Todo)
 * [Crate Controller TODO](Crate Controller TODO)
@@ -33,6 +35,8 @@ This is a trial for the Mu3e DAQ manual
 
 ## Integration Run 2021
 * [FEB Mapping](FEB Mapping - Integration Run 2021)
+* [Cabling](Cabling - Integration Run 2021)
+* [SQL run database](SQL run data base)
 
 ## Housekeeping
 
