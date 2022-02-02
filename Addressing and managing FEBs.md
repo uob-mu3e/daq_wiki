@@ -1,3 +1,5 @@
+# Status quo as of February 2nd 2022 #
+
 Each FEB currently has:
 
 * A physical location (crate/slot). The crate controller in that crate is used to switch the power in that slot, emit resets, switch the firmware image (via BP_mode_sel) and can be used for very slow emergency programming.
@@ -9,3 +11,10 @@ In the ODB we have:
 * /Equipment/FEBCrates/ - here we specify the MSCB host and MSCB node of all crate controllers. For each FEB, we specify the crate and slot. FEBs are identified by the global ID. Under Variables we have **power on/off - this should go to settings**. This is currently "owned" by the switch_fe, but should move to a separate FE on the backend (written, to be tested)
 * /Equipment/Links/ - owned by the clock & reset FE. Here we have a mask and names for the four switching boards (which is needed by the clock and reset FE for run starts). There is a link mask for the FEBs (by global ID), used in the clock & reset FE for enabling/disabling FEB ro and in the switching FE for knowing which FEBs should be initialized and read out. The link mask also defines the links that correspond to data only slots for the fibre FEBs. Here we also set the FEB type (pixel, fibre, tile, fibre secondary), partly redundant with the link mask, well as FEB names. All uses the globalID. Types and Names anr only used in the switch FE. Under variables, there is an unused link status for each RX and TX link.
 * /Equipment/Switching/ - here we have a bunch of UI command variables plus everything related to slow control of the FEBs as well as switching board diagnostics. Which switching board is meant at a specific time is set at compilation, the code only works with one at a time and maybe also not for anything that is not the central one. FEBs are typically identified by the Port on the Switching Board.
+
+# Proposal to go forward #
+
+* Manage power by a separate FE on the backend. Everything related to power goes into /Equipment/FEBCrates/
+* Do we need the enable/disable via the Reset link? If we can do that via slow control (or masking on the switching board) that would all move to the switchFE
+* Make four equipments and four ODB branches for the four switching boards
+* Define states and state transitions for each board, make clear which FE takes care of that when and keep things consistent or check them (a board that is powered off will never talk back to you)
