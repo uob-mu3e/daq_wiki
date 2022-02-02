@@ -1,0 +1,4 @@
+Each FEB currently has:
+* A physical location (crate/slot). The crate controller in that crate is used to switch the power in that slot, emit resets, switch the firmware image (via BP_mode_sel) and can be used for very slow emergency programming.
+* A global ID in the range 0-192, with blocks of size 48 for each switching board. This is used for addressed commands in the clock & Reset FE, in particular for enabling/disabling RO
+* A port on the switching board; this corresponds to the link that is used for slow control and primary data. SciFi boards use a secondary data port. Here a lot of assumptions about the ports being contiguous are made all across the code.
