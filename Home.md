@@ -9,6 +9,34 @@ This is a trial for the Mu3e DAQ manual
 * [Repository structure](Repository structure)
 * [Repository setup](Repository setup)
 
+## TODO lists
+
+* [FEB TODO](FEB Todo)
+* [Crate Controller TODO](Crate Controller TODO)
+
+## DAQ components
+
+* [manalyzer](manalyzer Mu3e)
+* [network tools](network tools)
+* [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
+* [Where are my bits in the sorter](Sorterbits)
+
+## Subdetectors
+
+### Pixels
+
+* [Mupix Configuration](Mupix Configuration)
+
+
+### MuTrig
+
+* [MuTRiG Settings](MuTRiG Settings)
+* [MuTrig sorting](MuTrig sorting)
+
+### Fibre 
+
+### Tiles
+
 ## Setting up a DAQ
 
 * [How to set up a DAQ PC](How to set up a DAQ PC)
@@ -16,22 +44,6 @@ This is a trial for the Mu3e DAQ manual
 * [FEB to A10 Dev Board Lab Setup](FEB to A10 Dev Board Lab Setup)
 * [Minimal slow control testing setup](Minimal slow control testing setup)
 
-* [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
-
-
-
-* [Where are my bits in the sorter](Sorterbits)
-* [MuTrig sorting](MuTrig sorting)
-
-* [manalyzer](manalyzer Mu3e)
-
-
-
-* [FEB TODO](FEB Todo)
-* [Crate Controller TODO](Crate Controller TODO)
-* [MuTRiG Settings](MuTRiG Settings)
-* [Mupix Configuration](Mupix Configuration)
-* [network tools](network tools)
 
 ## Integration Run 2021
 * [FEB Mapping](FEB Mapping - Integration Run 2021)
