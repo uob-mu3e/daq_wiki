@@ -20,6 +20,7 @@ This is a trial for the Mu3e DAQ manual
 * [network tools](network tools)
 * [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
 * [Where are my bits in the sorter](Sorterbits)
+* [Addressing and managing FEBs](Addressing and managing FEBs)
 
 ## Subdetectors
 
