@@ -1,6 +1,5 @@
 # DAQ Manual
 
-<div style="float: left; width: 30%; padding: 1%">
 This is a trial for the Mu3e DAQ manual
 
 * [DAQ meetings](DAQ meetings)
@@ -21,8 +20,7 @@ This is a trial for the Mu3e DAQ manual
 * [network tools](network tools)
 * [Slowcontrol for the FEBs](Slowcontrol for the FEBs)
 * [Where are my bits in the sorter](Sorterbits)
-</div>
-<div style="float: left; width: 30%; padding: 1%">
+
 ## Subdetectors
 
 ### Pixels
@@ -55,4 +53,3 @@ This is a trial for the Mu3e DAQ manual
 ## Housekeeping
 
 * [Wiki info](Wiki info)
-</div>
