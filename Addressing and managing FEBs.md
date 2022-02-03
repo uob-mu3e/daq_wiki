@@ -18,3 +18,8 @@ In the ODB we have:
 * Do we need the enable/disable via the Reset link? If we can do that via slow control (or masking on the switching board) that would all move to the switchFE
 * Make four equipments and four ODB branches for the four switching boards
 * Define states and state transitions for each board, make clear which FE takes care of that when and keep things consistent or check them (a board that is powered off will never talk back to you)
+* FEBs will have a physical address by crate and slot (8 bits, 7 of which are needed - 4 bits slot, 3 bits crate). This will likely not be contigous and definitely not map to the switching boards.
+* Add the mapping of FEBs to switching board ports in /Equipment/FEBCrates/
+* Array size can be reduced to 128.
+* Thus never use raw FEB indexing, but always use a feblist and a for(auto feb : febs) loop.
+* Think hard wherever a FEB index maps to some other index - this code is likely broken
