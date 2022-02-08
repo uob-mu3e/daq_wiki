@@ -23,3 +23,9 @@ In the ODB we have:
 * Array size can be reduced to 128.
 * Thus never use raw FEB indexing, but always use a feblist and a for(auto feb : febs) loop.
 * Think hard wherever a FEB index maps to some other index - this code is likely broken
+
+# Some refactoring later, February 8th 2022 #
+
+* FE for power on the backend done and tested. Still needs a bunch of functionality to make full use of the crate controller (BP mode sel, resets, maybe firmware upload).
+* Switch FE and associated slow control classes now consitently use mappedFEB. To be tested. 
+* ODB changes need to be tested and propagated to the custom pages
