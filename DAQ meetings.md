@@ -3,6 +3,7 @@
 * [January 3rd, 2022 - DAQ meeting](January 3rd, 2022 - DAQ meeting)
 * [January 17th, 2022 - DAQ meeting](January 17th, 2022 - DAQ meeting)
 * [January 31st, 2022 - DAQ meeting](January 31st, 2022 - DAQ meeting)
+* [February 14th, 2022 - DAQ meeting](February 14th, 2022 - DAQ meeting)
 
 # 2021 #
 
