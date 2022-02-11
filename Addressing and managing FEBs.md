@@ -32,3 +32,10 @@ In the ODB we have:
 * We use references everywhere, no raw pointers (except of course to the MIDAS buffer)
 * ODB changes need to be tested and propagated to the custom pages
 * For things that might or might not return something (give me FEB in slot X), use std::optional
+
+# Some rules for the future #
+
+* Use odbxx everywhere
+* Use std::string or std::string_view everywhere, string composition can be done via '+'. sprintf is deprecated. For interfacing C-style MIDAS, use .c_str()
+* Pass references rather than pointers for things that should not be NULL
+* Use std:option for things that can be NULL
