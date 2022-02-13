@@ -24,7 +24,7 @@ Cristina (on sick leave):
 
 * Currently trying to check data lines with PRBS data, but don't manage to see anything different to K28.5 with the PRBS single configuration (investigating). 
 
-* Propose SciFi DAQ meeting next week (Cristina, Yannick, Konrad, Marius, Martin, Nik ..?)
+* Propose SciFi DAQ meeting next week (Cristina, Yannick, Konrad, Marius, Martin, Nik ..?) to discuss milestones, roadmap and group contributions.
 
 ### Geneva ###
 
