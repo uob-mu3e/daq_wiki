@@ -18,8 +18,8 @@ Cristina (on sick leave):
 ![CLK.png](https://bitbucket.org/repo/7zKBgbq/images/4193245209-CLK.png)
 
 * Checked data line before equalizer (at DAB test point), after equalizer (at DAB-FEB connector) and after equalizer and pre-emphasis (at DAB-FEB connector). Findings:
-** Equalizer behaves as expected but introduces jitter. How much jitter can the FEB tolerate?
-** Pre-emphasis distorts the signal and won't be used in DAB, but perhaps in the SMB.
+(1) Equalizer behaves as expected but introduces jitter. How much jitter can the FEB tolerate?
+(2) Pre-emphasis distorts the signal and won't be used in DAB, but perhaps in the SMB.
 ![Screen Shot 2022-02-13 at 19.14.56.png](https://bitbucket.org/repo/7zKBgbq/images/361622784-Screen%20Shot%202022-02-13%20at%2019.14.56.png)
 
 * Currently trying to check data lines with PRBS data, but don't manage to see anything different to K28.5 with the PRBS single configuration (investigating). 
