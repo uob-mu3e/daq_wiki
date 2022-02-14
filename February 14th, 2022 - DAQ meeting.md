@@ -1,4 +1,4 @@
-Present:
+Present: *Alex, Ann-Kathrin, Daniel, Sebastian, Ben, Martin, Luigi, Gavin, Pepe, Haris, Konrad, Frederik, Nik*
 
 # Firmware, Software and Setup Status and Activities #
 
@@ -9,6 +9,24 @@ Nik:
 * Failsafe programming working
 * FEB crate control FE reworked and tested
 * Working on slow control/link management refactoring, see [Addressing and managing FEBs](Addressing and managing FEBs)
+
+Alex:
+
+* Reworking PCIe interface and removing unnecessary clock transitions
+
+Martin:
+
+* Writing MuPix configuration firmware which should also work with MuPix11
+
+Marius:
+
+* Added buffer cleaning at the end of run, 
+* end of event pointers for the GPU,
+* Reworking analyzer as discussed in review 
+
+Haris:
+
+* Working on event counting on GPU, hit counter next
 
 ### Zürich ###
 
@@ -24,27 +42,39 @@ Cristina (on sick leave):
 
 * Currently trying to check data lines with PRBS data, but don't manage to see anything different to K28.5 with the PRBS single configuration (investigating). 
 
-* Proposal for SciFi DAQ meeting next week (Cristina, Yannick, Konrad, Marius, Martin, Nik ..?) to discuss milestones, roadmap and group contributions. Next Monday after DAQ meeting?
+* Proposal for SciFi DAQ meeting next week (Cristina, Yannick, Konrad, Marius, Martin, Nik ..?) to discuss milestones, roadmap and group contributions. Next Monday after DAQ meeting - will be organized (Nik absent, rest will perpare)
 
 ### Geneva ###
 
+Not present
 
 ### Heidelberg Pixels ###
 
+Luigi/Pepe:
+
+* Installed DAQ, use telescope card, see the same issues as in December beam time. Debugging.
+* New probe card being designed, will require yet another pinout 
 
 ### Heidelberg Tiles ###
 
+No news
+
 ### KIT ###
 
+No news
+
 ### MIDAS ###
+
+No news
 
 ### Heidelberg telescope upgrade ###
 
 * Arrived hardware:
     * PHY does not work
-    * Remote test of the fourth card possible
+    * Remote test of the fourth card possible - yes, Martin will do.
 * Currently working on the data path
-* Is an OS running on the NIOS?
+* Is an OS running on the NIOS? - No.
+
 
 ### Pull requests ###
 
@@ -54,14 +84,14 @@ What can we merge?
 
 ### Bitbucket issues ###
 
-Have a look - the list is not getting shorter (yet?). Close things that are solved. Add issues if you discover them. Work to tackle them...
+Have a look - the list is not getting shorter (yet?). Close things that are solved. Add issues if you discover them. Work to tackle them... Use CRITCAL for issues that are needed for the cosmic run.
 
 [See here](https://bitbucket.org/mu3e/online/issues?status=new&status=open)
 
 
 # Cosmic run checklist #
 
-* Many points being worked at
+* Many points being worked at, nothing can be ticked off yet.
 
 ### Before we go to PSI ###
 
@@ -79,8 +109,6 @@ Have a look - the list is not getting shorter (yet?). Close things that are solv
 * Clear and re-cable the fibre fanout rack
 * Recuperate the 2-3 fibres from the area
 
-
-
 ## Next week ##
 
-Some review to be found...
+Nik will be on holiday. Alex will run the meeting. In two weeks we wll look at the MuPix configuration after the regular meeting.
