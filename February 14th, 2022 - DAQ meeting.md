@@ -8,7 +8,7 @@ Nik:
 
 * Failsafe programming working
 * FEB crate control FE reworked and tested
-* Working on slow control/link management refactoring, see [Addressing and managingFEBs](Addressing and managingFEBs)
+* Working on slow control/link management refactoring, see [Addressing and managing FEBs](Addressing and managing FEBs)
 
 ### Zürich ###
 
