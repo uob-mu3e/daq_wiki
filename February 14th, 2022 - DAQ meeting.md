@@ -42,7 +42,7 @@ Cristina (on sick leave):
 
 * Arrived hardware:
     * PHY does not work
-    * Remote test possible of the fourth card possible
+    * Remote test of the fourth card possible
 * Currently working on the data path
 * Is an OS running on the NIOS?
 
