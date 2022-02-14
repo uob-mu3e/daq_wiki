@@ -41,8 +41,8 @@ Cristina (on sick leave):
 ### Heidelberg telescope upgrade ###
 
 * Arrived hardware:
-** PHY does not work
-** Remote test possible of the fourth card possible
+    * PHY does not work
+    * Remote test possible of the fourth card possible
 * Currently working on the data path
 * Is an OS running on the NIOS?
 
