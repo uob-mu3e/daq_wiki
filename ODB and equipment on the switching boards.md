@@ -54,8 +54,10 @@ SciFiFibres  (to be discussed...)
 
 ## ODB organization ##
 
-We use the banks in ODB idiom for slow control, so /Equipment/XXX/Settings will contain bank variable names and /Equipment/XXX/Variables will contain the bank content. With this, it makes sense to move UI commands from settings to a /Equipment/XXX/Commands branch on which a watch can be set.
+We use the banks in ODB idiom for slow control, so '/Equipment/XXX/Settings' will contain bank variable names and '/Equipment/XXX/Variables' will contain the bank content. With this, it makes sense to move UI commands from settings to a '/Equipment/XXX/Commands' branch on which a watch can be set.
 
 # FEBs and Crate mapping #
 
-/Equipment
+'/Equipment/FEBCrates/Settings/' contains the physical position of FEBs (note that in the final system with the large backplane, each FEB will have an unique 8-Bit address, of which the MSB will be 0). In particular, 'FEBCrate' denotes the crate (0-7) and 'FEBSlot' denotes the slot (0-15) in the crate. With the large backplanes, we will get 'unique address = 16*FEBCrate + FEBSlot'. 'FEBPower' here is used to switch FEBs on and off via the crate controller (handled in febcratefe).
+
+The FEBs then have optical fibres to the switching boards, this mapping is handled in '/Equipment/LinksCentral/Settings' (replace 'Central' with 'Upstream', 'Downstream', 'Fibres' for the respective switching baords)
