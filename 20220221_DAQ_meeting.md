@@ -8,23 +8,42 @@ Present: *...*
 
 ### Mainz ###
 
+- Alex: remove pcie1, remove 156 -> 250 transition, only use 250
+
+- Marius:
+    - where do we put ddr ram to (a10_block, etc.)
+    - add fifo to transition from pcie to ddr
+    - compiled ddr4
+
 ### Zürich ###
 
-No news
+no news
+
+- Cristina:
+    - talk about plans at the end of meeting within group
 
 ### Geneva ###
 
+no news
+
 ### Heidelberg Pixels ###
+
+- Luigi: still working on testbeam
+    - improve configuration
 
 ### Heidelberg Tiles ###
 
 ### KIT ###
 
+no news
+
 ### MIDAS ###
 
 ### Heidelberg telescope upgrade ###
 
-
+- Daniel:
+    - test adapter card, 2 working with working phi,
+      2 with nonworking phi chips, working on ethernet conn data path
 
 ## Bitbucket
 
@@ -61,3 +80,4 @@ No news
 
 
 ## Next week ##
+
