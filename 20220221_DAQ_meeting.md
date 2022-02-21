@@ -10,6 +10,8 @@ Present: *...*
 
 ### Zürich ###
 
+No news
+
 ### Geneva ###
 
 ### Heidelberg Pixels ###
@@ -59,4 +61,3 @@ Present: *...*
 
 
 ## Next week ##
-
