@@ -1,79 +1,29 @@
-Present: *Alex, Ann-Kathrin, Daniel, Sebastian, Ben, Martin, Luigi, Gavin, Pepe, Haris, Konrad, Frederik, Nik*
+Present: 
 
 # Firmware, Software and Setup Status and Activities #
 
 ### Mainz ###
 
-Nik:
-
-* Failsafe programming working
-* FEB crate control FE reworked and tested
-* Working on slow control/link management refactoring, see [Addressing and managing FEBs](Addressing and managing FEBs)
-
-Alex:
-
-* Reworking PCIe interface and removing unnecessary clock transitions
-
-Martin:
-
-* Writing MuPix configuration firmware which should also work with MuPix11
-
-Marius:
-
-* Added buffer cleaning at the end of run, 
-* end of event pointers for the GPU,
-* Reworking analyzer as discussed in review 
-
-Haris:
-
-* Working on event counting on GPU, hit counter next
 
 ### Zürich ###
 
-Cristina (on sick leave):
-
-* Compared CLK transmission (625 MHz) with samtec and microtwisted pairs:
-![CLK.png](https://bitbucket.org/repo/7zKBgbq/images/4193245209-CLK.png)
-
-* Checked data line before equalizer (at DAB test point), after equalizer (at DAB-FEB connector) and after equalizer and pre-emphasis (at DAB-FEB connector). Findings:
-(1) Equalizer behaves as expected but introduces jitter. How much jitter can the FEB tolerate?
-(2) Pre-emphasis distorts the signal and won't be used in DAB, but perhaps in the SMB.
-![Screen Shot 2022-02-13 at 19.14.56.png](https://bitbucket.org/repo/7zKBgbq/images/361622784-Screen%20Shot%202022-02-13%20at%2019.14.56.png)
-
-* Currently trying to check data lines with PRBS data, but don't manage to see anything different to K28.5 with the PRBS single configuration (investigating). 
-
-* Proposal for SciFi DAQ meeting next week (Cristina, Yannick, Konrad, Marius, Martin, Nik ..?) to discuss milestones, roadmap and group contributions. Next Monday after DAQ meeting - will be organized (Nik absent, rest will perpare)
 
 ### Geneva ###
 
-Not present
 
 ### Heidelberg Pixels ###
 
-Luigi/Pepe:
-
-* Installed DAQ, use telescope card, see the same issues as in December beam time. Debugging.
-* New probe card being designed, will require yet another pinout 
 
 ### Heidelberg Tiles ###
 
-No news
 
 ### KIT ###
 
-No news
 
 ### MIDAS ###
 
-No news
 
 ### Heidelberg telescope upgrade ###
-
-* Arrived hardware:
-    * PHY does not work
-    * Remote test of the fourth card possible - yes, Martin will do.
-* Currently working on the data path
-* Is an OS running on the NIOS? - No.
 
 
 ### Pull requests ###
@@ -91,7 +41,6 @@ Have a look - the list is not getting shorter (yet?). Close things that are solv
 
 # Cosmic run checklist #
 
-* Many points being worked at, nothing can be ticked off yet.
 
 ### Before we go to PSI ###
 
@@ -109,6 +58,6 @@ Have a look - the list is not getting shorter (yet?). Close things that are solv
 * Clear and re-cable the fibre fanout rack
 * Recuperate the 2-3 fibres from the area
 
-## Next week ##
+## Review of MuPix config ##
 
-Nik will be on holiday. Alex will run the meeting. In two weeks we wll look at the MuPix configuration after the regular meeting.
+## Next week ##
