@@ -5,6 +5,7 @@
 * [January 31st, 2022 - DAQ meeting](January 31st, 2022 - DAQ meeting)
 * [February 14th, 2022 - DAQ meeting](February 14th, 2022 - DAQ meeting)
 * [2022-02-22 - DAQ meeting](20220221_DAQ_meeting.md)
+* [February 28th, 2022 - DAQ meeting](February 28th, 2022 - DAQ meeting)
 
 # 2021 #
 
