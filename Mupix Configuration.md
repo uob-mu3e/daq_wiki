@@ -1,2 +1,2 @@
 First Idea:
-![mp_config.jpg](https://bitbucket.org/repo/7zKBgbq/images/3502149422-mp_config.jpg)
+![mp_config_v2.jpg](https://bitbucket.org/repo/7zKBgbq/images/2100157223-mp_config_v2.jpg)
