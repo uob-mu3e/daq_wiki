@@ -1,10 +1,15 @@
-Present: 
+Present: *Alex, Ann-Kathrin, Haris, Martin, Stefan, Ben, Marius, Konrad, Frederik, Yannick, Nik*
 
 # Firmware, Software and Setup Status and Activities #
 
 ### Mainz ###
 * setup of distributed system, having problems with clock box firmware compilation
-* new and hopefully final firmware concept for mupix config including pixel masking was implemented, ready for review & lab-test
+* Martin: new and hopefully final firmware concept for mupix config including pixel masking was implemented, ready for review & lab-test - reviewed in the second half of the meeting
+* Marius: SW board rewrite, merging tree works with headers, keep 32 bits and feed subtrees to farm links, optimizing this needs rate simulation. Review next week
+* Marius working on farm for the cosmic run
+* Haris: Event count on GPU working, now started hit count. SW currently running on a 1080Ti. To be decided which HW goes to PSI
+* Alex: Cleaning up firmware, will tag a release now.
+* Alex investigating if the driver can be made transparent to firmware uploads on the FPGA boards.
 
 ### Zürich ###
 
