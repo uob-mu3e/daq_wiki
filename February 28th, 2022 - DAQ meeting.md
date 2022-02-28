@@ -3,7 +3,8 @@ Present:
 # Firmware, Software and Setup Status and Activities #
 
 ### Mainz ###
-
+* setup of distributed system, having problems with clock box firmware compilation
+* new and hopefully final firmware concept for mupix config including pixel masking was implemented, ready for review & lab-test
 
 ### Zürich ###
 
@@ -59,5 +60,12 @@ Have a look - the list is not getting shorter (yet?). Close things that are solv
 * Recuperate the 2-3 fibres from the area
 
 ## Review of MuPix config ##
+Overview:
+https://bitbucket.org/mu3e/online/wiki/Mupix%20Configuration
+
+code:
+https://bitbucket.org/mu3e/online/src/martin_dev/fe_board/fe_mupix/mupix_block/slowcontrol/
+
+"mupix_ctrl.vhd" and below
 
 ## Next week ##
