@@ -13,28 +13,52 @@ Present: *Alex, Ann-Kathrin, Haris, Martin, Stefan, Ben, Marius, Konrad, Frederi
 
 ### Zürich ###
 
+SciFi Hackathlon ongoing
+* DAB pinout maybe incorrect (later in the day: equalizers were shut off).
+* Config can be read back to NIOS
+* DABs are nicely probable, which helps a lot - design future DABs also for probability
+* Plan is to see MuTrig data, play with config to get PLL locked
+* Six SciFi boards with MuTrigs at hand, try to identify good ones for cosmic run
+* Priority is to get meaningful data, sorting is only a strecth goal.
 
 ### Geneva ###
 
+* In Zürich for the Hackatlon
 
 ### Heidelberg Pixels ###
 
+* Twisting micro-cables
 
 ### Heidelberg Tiles ###
 
+* MuTrig 3 requirements doucment in circulation, Konrad will turn comments into requirements.
+* Two invalid 8b/10b words during reset not seen as a problem
 
 ### KIT ###
 
+* Will put together test system, to be discussed with Nik this week
 
 ### MIDAS ###
 
+* Stefan fiexed several issues
+* Some ideas to fix warnings, Nik will check
+* Restarting runs is broken in MEG, maybe related to what Marius sees in the dummy Farm FE, Stefan working on it
+
+### Setup at PSI ###
+
+* Mainz will bring a few PCs for control room if they arrive in time
+* Mainz might start setup during the Wengen week, Stefan is at PSI until the 17th
+* 10 Crate controllers ready, one chip missing. Nik tries via non-official suppliers
+* 8 optical fibre to MIDAS boxes in crate with power supply available. Will need eight ethernet slots - swithc should be sufficient
 
 ### Heidelberg telescope upgrade ###
 
 
 ### Pull requests ###
 
-What can we merge?
+What can we merge? 
+
+* Alex will merge one (optional CUDA), then tag.
 
 [See here](https://bitbucket.org/mu3e/online/pull-requests/)
 
@@ -47,6 +71,7 @@ Have a look - the list is not getting shorter (yet?). Close things that are solv
 
 # Cosmic run checklist #
 
+Hard at work on all of them, nothing done yet.
 
 ### Before we go to PSI ###
 
@@ -74,3 +99,5 @@ https://bitbucket.org/mu3e/online/src/martin_dev/fe_board/fe_mupix/mupix_block/s
 "mupix_ctrl.vhd" and below
 
 ## Next week ##
+
+Regular DAQ meeting plus review of the switching firmware, maybe also A10 block. Farm to follow.
