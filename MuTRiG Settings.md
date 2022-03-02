@@ -1,3 +1,5 @@
+#
+
 | Name in JS GUI    | Description  | Comments  |
 |-------------------|--------------|-----------|
 | **DAQ Settings**  |              |           |
@@ -71,7 +73,9 @@ E-flags are transmitted|Other names: Fast mode, SciFi mode|
 | POLE_EN_N         |0: enable dac for PZC.| Only controls the dac, not the feature itself|
 | AMON_EN_N         |1: disable analog monitor output from this channel. |**Analog monitor should only be enabled for up to one channel in a chip!** Leave off with SMB |
 
-
 Missing: Coincidence logic
 
-Sources: [Simon's Thesis](https://www.psi.ch/sites/default/files/import/mu3e/ThesesEN/DissertationCorrodi.pdf), [Custom page tooltips](https://bitbucket.org/mu3e/online/src/master/mhttpd/custom/mutrigTdc.html), *KIP MuTRiG configGUI* tooltips from KIP
+Sources:
+- [Simon's Thesis](https://www.psi.ch/sites/default/files/import/mu3e/ThesesEN/DissertationCorrodi.pdf),
+- [Custom page tooltips](https://bitbucket.org/mu3e/online/src/master/mhttpd/custom/mutrigTdc.html),
+- *KIP MuTRiG configGUI* tooltips from KIP

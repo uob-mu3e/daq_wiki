@@ -35,7 +35,7 @@ This is a trial for the Mu3e DAQ manual
 * [MuTRiG Settings](MuTRiG Settings)
 * [MuTrig sorting](MuTrig sorting)
 
-### Fibre 
+### Fibre
 
 ### Tiles
 

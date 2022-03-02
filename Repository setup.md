@@ -1,6 +1,9 @@
+#
+
 Here we list what should go where in the online repo, naming conventions etc.
 
-# Overall structure #
+## Overall structure
+
 On the top level, the repository is structured by the hardware on which software and firmware is running, namely:
 
 * **fe_board**: Front-end board firmware and NIOS software
@@ -18,13 +21,12 @@ And directories with service functions:
 * **modules**: Softwer from separate repos such as MIDAS or the analyzer
 * **online**: Fiel fromwhich things are run, containing startup scripts etc.
 
-
-### Currently misplaced/orphaned directories ###
+### Currently misplaced/orphaned directories
 
 * 'backend_pc/midas_fe/raspberrypi' where does that belong?
 * 'backend_pc/midas_fe/MpTuneDACs' should probably go to the switching pc
 * 'frontends' is this just a relic than can go?
 
-# Directory structure #
+## Directory structure
 
 [Repository structure](Repository structure)
