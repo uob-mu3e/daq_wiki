@@ -2,7 +2,7 @@
 
 This is a trial for the Mu3e DAQ manual
 
-* [DAQ meetings](DAQ meetings)
+* [DAQ meetings](DAQ_meetings.md)
 
 ## Online Repository
 
