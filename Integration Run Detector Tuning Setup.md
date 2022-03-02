@@ -65,7 +65,7 @@ For tuning, we skip the farm and run on the switching PC mu3eSwitch0 directly.
 * `make terminal`
 * Now the NIOS terminal of the A10 board should show up (TODO: add picture)
 * Close this terminal again and navigate to `common/kerneldriver`
-* `make` for compiling the kernel modules
+* run `( cd common/kerneldriver && make )` or `( cd build && make mudaq-driver )` for compiling the kernel modules
 * The following lines are only possible if the A10 was flashed with a PCIe firmware before (see Flash A10 board) and you need to redo them after you programmed the device via `make pgm`
 * Since the device is reprogrammed we have to rescan the PCIe devices.
 * First we need the find the device number `sudo lspci | grep Altera` -> "dev_number" Unassigned class [ff00]: Altera Corporation Device 0004 (rev 01) 
@@ -73,9 +73,12 @@ For tuning, we skip the farm and run on the switching PC mu3eSwitch0 directly.
 * `sudo su` in the `common/kerneldriver` folder
 * `echo 1 > /sys/bus/pci/devices/0000:"dev_number"/remove`
 * `echo 1 > /sys/bus/pci/rescan`
-* Load the FPGA driver with `./load_mudaq.sh`
+* Load the FPGA driver with `./load_mudaq.sh` or `( cd build && make mudaq-driver-insmod )`
 * Now you should have two devices under `/dev/mudaq*`. One is the FPGA the other one the DMA buffer.
-* Change the permissions of the devices so a normal user can use them `chmod go+rw /dev/mudaq*`
+* Change the permissions of the devices so a normal user can use them:
+    - `chmod go+rw /dev/mudaq*`
+    - or install udev rule `cp common/kerneldriver/99-mudaq.rules`
+      and trigger udev with `sudo udevadm control --reload && sudo udevadm trigger`
 
 # Test A10 Device #
 
