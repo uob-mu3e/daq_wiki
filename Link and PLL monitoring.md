@@ -27,6 +27,25 @@ LINK_LOCKED_LOW_REGISTER_R
 LINK_LOCKED_HIGH_REGISTER_R
 ```
 
+* Global time counter
+
+```
+    --! time counter for getting the current time one the SWB
+    --! reset if one of the FEBs send back the runNr at start of run
+    process(i_clk, i_reset_n)
+    begin
+    if ( i_reset_n /= '1' ) then
+        o_time_counter <= (others => '0');
+    elsif rising_edge(i_clk) then
+        o_time_counter <= time_counter + '1';
+        if ( work.util.reduced_or(runNr_ack) = '1' ) then
+            o_time_counter <= (others => '0');
+        end if;
+    end if:
+    end process;
+```
+GLOBAL_TS_LOW_REGISTER_R, GLOBAL_TS_HIGH_REGISTER_R
+
 ## Merging data flow ##
 Function for reading out data flow counter (counters are in a10_counters.vhd/h):
 
