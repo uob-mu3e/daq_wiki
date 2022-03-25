@@ -9,12 +9,23 @@ How about PLLs?
 ## SW and Farm boards ##
 
 * PLL Registers SWB/Farm:
-CNT_PLL_156_REGISTER_R(31) = locked
-CNT_PLL_156_REGISTER_R(30 downto 0) = not locked cnt
-CNT_PLL_250_REGISTER_R(31) = locked
-CNT_PLL_250_REGISTER_R(30 downto 0) = not locked cnt
 
-Registers for link monitoring? Sticky mechanism?
+1. CNT_PLL_156_REGISTER_R(31) = locked
+2. CNT_PLL_156_REGISTER_R(30 downto 0) = not locked cnt
+3. CNT_PLL_250_REGISTER_R(31) = locked
+4. CNT_PLL_250_REGISTER_R(30 downto 0) = not locked cnt
+
+* Registers for sticky link locked monitoring
+
+```
+--FEB--> [ RX/TX ]   |   [ RX/TX ] --> Farm 
+--FEB--> [ RX/TX ]   |   [ RX/TX ] --> Farm
+--FEB--> [ RX/TX ]   |   [ RX/TX ] --> Farm
+
+Dynamic and depending on how much links we have on the SWB the links to the farm are in low or in high
+LINK_LOCKED_LOW_REGISTER_R
+LINK_LOCKED_HIGH_REGISTER_R
+```
 
 ## Merging data flow ##
 Function for reading out data flow counter (counters are in a10_counters.vhd/h):
