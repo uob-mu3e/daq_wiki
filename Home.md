@@ -22,6 +22,7 @@ This is a trial for the Mu3e DAQ manual
 * [Where are my bits in the sorter](Sorterbits)
 * [Addressing and managing FEBs](Addressing and managing FEBs)
 * [ODB and equipment on the switching boards](ODB and equipment on the switching boards)
+* [Link and PLL monitoring](Link and PLL monitoring)
 
 ## Subdetectors
 
