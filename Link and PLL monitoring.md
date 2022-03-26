@@ -12,6 +12,23 @@ For the FEB the mupix arrival time histograms can be read from here
 ```
 could be that it did not make it into the dev branch by now
 
+```
+   constant MP_LVDS_STATUS_START_REGISTER_W    :  integer := 16#1100#;       -- DOC: start of lvds status register block, 1 Word for each lvds link from here on | MP_FEB
+        subtype  MP_LVDS_STATUS_DISP_ERR_RANGE  is integer range 27 downto 0; -- DOC: Disparity error counter in each lvds status register | MP_FEB 
+        constant MP_LVDS_STATUS_PLL_LOCKED_BIT  :  integer := 28;             -- DOC: PLL locked bit in each lvds status register | MP_FEB 
+        subtype  MP_LVDS_STATUS_STATE_RANGE     is integer range 30 downto 29;-- DOC: status Bit in each lvds status register | MP_FEB 
+        constant MP_LVDS_STATUS_READY_BIT       :  integer := 31;             -- DOC: if set: this mupix lvds link is locked and ready | MP_FEB
+```
+
+ignore MP_LVDS_STATUS_STATE_RANGE
+
+for the Si chips it is 
+```
+constant SI_STATUS_REGISTER                 :   integer := 16#FC2B#;
+```
+
+but if the Si chip is not ready / configured chances are low i would say that this makes it over the optical link from the feb
+
 ## SW and Farm boards ##
 
 * PLL Registers SWB/Farm:
