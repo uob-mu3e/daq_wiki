@@ -2,9 +2,15 @@ Needed: Custom pages for link and PLL monitoring
 
 ## FEBs ##
 
-What registers do I need to read to get the LVDS link status? Where can we create single, sticky status bits with either reset on read or reset on setting some register?
+For the FEB the mupix arrival time histograms can be read from here
+```
+ -----------------------------------------------------------------
+---- mupix PLL lock monitor (0x1200-0x12FF)----------------------
+-----------------------------------------------------------------
 
-How about PLLs?
+    constant MP_HIT_ARRIVAL_START_REGISTER_R    :  integer := 16#1200#;       -- DOC: start of PLL lock monitor block, 4 Words for each chip, histogram lower bits of mupix arrival timestamp | MP_FEB
+```
+could be that it did not make it into the dev branch by now
 
 ## SW and Farm boards ##
 
