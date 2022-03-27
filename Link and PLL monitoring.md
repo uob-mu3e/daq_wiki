@@ -29,7 +29,9 @@ constant SI_STATUS_REGISTER                 :   integer := 16#FC2B#;
 
 Martin: but if the Si chip is not ready / configured chances are low i would say that this makes it over the optical link from the FEB
 
-Nik: Good point, this should be readable via the backplane
+Nik: Good point, this should be readable via the backplane (a bit much for the cosmic run), created issue #107
+
+TODO: Hit counter (note that one is sufficient, the "hits in MuPix format" were something else, the bank is now called PCLS (pixel central link status). PCLL would be for storing hits from the links directly in debug RO.
 
 ## SW and Farm boards ##
 
@@ -51,6 +53,7 @@ Dynamic and depending on how much links we have on the SWB the links to the farm
 LINK_LOCKED_LOW_REGISTER_R
 LINK_LOCKED_HIGH_REGISTER_R
 ```
+TODO: What is the mechanism to reset the sticky bits?
 
 * Global time counter
 
@@ -115,3 +118,5 @@ The DMA_HALFFUL_REGISTER_R is not in this 6 counters (just a normal register) si
                                                                         SWB_BANK_BUILDER_EVENT_CNT
 ```
 3. TODO: N Data Path Counters per detector (Pixel US, Pixel DS, Scifi) in time merger mode.
+
+TODO: When the data path counters are defined, update SSCN bank spec in specbook. Update the readout routine, hook up bank and custom page.
