@@ -8,7 +8,7 @@ The pixel LVDS status is written to the PCLS bank, which in turn is displayed on
 
 The features are on a snippet of two links, for ease of view:
 
-![LVDS_Status_Snippet.png](https://bitbucket.org/repo/7zKBgbq/images/1651458846-LVDS_Status_Snippet.png)
+![LVDS_Status_Snippet.png](https://bitbucket.org/repo/7zKBgbq/images/171246456-LVDS_Status_Snippet.png)
 
 * On the left is the 4-bin arrival time histogram. If the MuPix PLL is properly locked, hits will arrive only every 4th 125 MHz cycle and at a fixed phase, i.e. only one bin should be filled. The maximum bin is displayed in green, the others red. Note that bins with > 0 entries are scaled to be at least one pixel (i.e. visible).
 * The histogram is followed by the link name (currently hardcoded in the JavaScript, could eventually be taken form the ODB if we give our pixels fancy names).
