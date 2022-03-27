@@ -1,4 +1,4 @@
-Needed: Custom pages for link and PLL monitoring
+Goal: Custom pages for link and PLL monitoring
 
 ## FEBs ##
 
@@ -27,7 +27,9 @@ for the Si chips it is
 constant SI_STATUS_REGISTER                 :   integer := 16#FC2B#;
 ```
 
-but if the Si chip is not ready / configured chances are low i would say that this makes it over the optical link from the feb
+Martin: but if the Si chip is not ready / configured chances are low i would say that this makes it over the optical link from the FEB
+
+Nik: Good point, this should be readable via the backplane
 
 ## SW and Farm boards ##
 
