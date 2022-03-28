@@ -1,0 +1,1 @@
+We want to display the data flow thorough the switching board and into the farm in order to identify potential bottlenecks. The current page is meant for the cosmic run. For the full system (114 instead of 12 FEBs) we clearly have to come up with a lot of simplifications and have to produce fold-out subpages. This is how it looks now:
