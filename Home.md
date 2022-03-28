@@ -25,6 +25,7 @@ This is a trial for the Mu3e DAQ manual
 ## UI
 
 * [Pixel LVDS UI](UI/Pixel LVDS UI.md)
+* [Data flow UI](UI/Data Flow UI.md)
 
 ## Development blogs
 
