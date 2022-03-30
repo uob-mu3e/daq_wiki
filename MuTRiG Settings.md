@@ -79,3 +79,118 @@ Sources:
 - [Simon's Thesis](https://www.psi.ch/sites/default/files/import/mu3e/ThesesEN/DissertationCorrodi.pdf),
 - [Custom page tooltips](https://bitbucket.org/mu3e/online/src/master/mhttpd/custom/mutrigTdc.html),
 - *KIP MuTRiG configGUI* tooltips from KIP
+
+
+*** Mapping mutrig1 to mutrig2 parameters ***
+
+**Global Settings** 
+ODB: /Equipment/SciFi/Settings/ASICs/Global/
+
+#
+
+| Mutrig2                       | Mutrig1  |
+|-------------------------------|----------|
+| ext_trig_mode                 | EXT_TRIG_MODE |
+| ext_trig_endtime_sign         | EXT_TRIG_SIGN_FORW_TIME |
+| ext_trig_offset               | EXT_TRIG_BACK_TIME |
+| ext_trig_endtime              | EXT_TRIG_FORW_TIME |
+| gen_idle                      | O_GEN_IDLE_SIGNAL |
+| ms_debug                      | MS_DEBUG |
+| prbs_debug                    | PRBS_DEBUG |
+| prbs_single                   | PRBS_SINGLE |
+| sync_ch_rst                   | SYNC_CH_RST |
+| disable_coarse                | DISABLE_COARSE |
+| pll_setcoarse                 | PLL1_SETCOARSE |
+| short_event_mode              | FAST_TRANS_MODE |
+| pll_envomonitor               | PLL1_ENVCOMONITOR |
+| pll_lol_dbg                   | PLL_LOL_dbg |
+| en_ch_evt_cnt                 | EN_CH_EVT_CNT |
+
+** Chip settings ** 
+ODB: /Equipment/SciFi/Settings/ASICs/TDCs/
+
+| Mutrig2                      | Mutrig1  |
+|------------------------------|----------|
+| vnpfc                        | DAC_TDC_VNPFC |
+| vnpfc_offset                 | DAC_TDC_VNPFC_OFFSET |
+| vnpfc_scale                  | DAC_TDC_VNPFC_SCALE |
+| vncnt                        | DAC_TDC_VNCnt |
+| vncnt_offset                 | DAC_TDC_VNCnt_OFFSET |
+| vncnt_scale                  | DAC_TDC_VNCnt_SCALE |
+| vnvcobuffer                  | DAC_TDC_VNVCOBUFFER |
+| vnvcobuffer_offset           | DAC_TDC_VNVCOBUFFER_OFFSET |
+| vnvcobuffer_scale            | DAC_TDC_VNVCOBUFFER_SCALE |
+| vnd2c                        | DAC_TDC_VND2C |
+| vnd2c_offset                 | DAC_TDC_VND2C_OFFSET |
+| vnd2c_scale                  | DAC_TDC_VND2C_SCALE |
+| vnpcp                        | DAC_TDC_VNPCP |
+| vnpcp_offset                 | DAC_TDC_VNPCP_OFFSET |
+| vnpcp_scale                  | DAC_TDC_VNPCP_SCALE |
+| vnhitlogic                   | DAC_TDC_VNHITLOGIC |
+| vnhitlogic_offset            | DAC_TDC_VNHITLOGIC_OFFSET |
+| vnhitlogic_scale             | DAC_TDC_VNHITLOGIC_SCALE |
+| vncntbuffer                  | DAC_TDC_VNCntBuffer |
+| vncntbuffer_offset           | DAC_TDC_VNCntBuffer_OFFSET |
+| vncntbuffer_scale            | DAC_TDC_VNCntBuffer_SCALE |
+| vnvcodelay                   | DAC_TDC_VNVCODELAY |
+| vnvcodelay_offset            | DAC_TDC_VNVCODELAY_OFFSET |
+| vnvcodelay_scale             | DAC_TDC_VNVCODELAY_SCALE |
+| latchbias                    | DAC_TDC_LATCHBIAS |
+| ms_limits                    | MS_LIMITS |
+| ms_switch_sel                | MS_SWITCH_SEL |
+| amon_en_n                    | AMON_EN |
+| amon_dac                     | AMON_DAC |
+| ??                           | COIN_WND |
+| dmon_1_en                    | DIG_MON1_EN |
+| dmon_1_dac                   | DIG_MON1_DAC |
+| dmon_2_en                    | DIG_MON2_EN |
+| dmon_2_dac                   | DIG_MON2_DAC |
+| lvds_tx_vcm                  | LVDS_TX_VCM |
+| lvds_tx_bias                 | LVDS_TX_BIAS |
+| coin_xbar_lower_rx_ena       | COIN_XBAR_lower_RX_ena |
+| coin_xbar_lower_tx_ena       | COIN_XBAR_lower_TX_ena |
+| coin_xbar_lower_tx_vdac      | COIN_XBAR_lower_TX_vDAC |
+| coin_xbar_lower_tx_idac      | COIN_XBAR_lower_TX_iDAC |
+| coin_mat_xbl                 | COIN_MAT_XBL |
+| coin_mat_xbu                 | COIN_MAT_XBH |
+| coin_xbar_upper_rx_ena       | COIN_XBAR_upper_RX_ena |
+| coin_xbar_upper_tx_ena       | COIN_XBAR_upper_TX_ena |
+| coin_xbar_upper_tx_vdac      | COIN_XBAR_upper_TX_vDAC |
+| coin_xbar_upper_tx_idac      | COIN_XBAR_upper_TX_iDAC |
+
+** Channel settings **
+OBD: /Equipment/SciFi/Settings/ASICs/Channels/
+
+| Mutrig2                       | Mutrig1  |
+|-------------------------------|----------|
+| mask                          | DAC_CHANNEL_MASK_CH |
+| recv_all                      | RECV_ALL_CH |
+| tthresh                       | DAC_TTHRESH_CH |
+| tthresh_sc                    | DAC_TTHRESH_SC_CH |
+| ethresh                       | DAC_ETHRESH_CH |
+| ebias                         | DAC_EBIAS_CH |
+| sipm                          | DAC_SIPM_CH |
+| sipm_sc                       | DAC_SIPM_SC_CH |
+| inputbias                     | DAC_INPUTBIAS_CH |
+| inputbias_sc                  | DAC_INPUTBIAS_SC_CH |
+| pole                          | DAC_POLE_CH |
+| pole_sc                       | DAC_POLE_SC_CH |
+| ampcom                        | DAC_AMPCOM_CH |
+| ampcom_sc                     | DAC_AMPCOM_SC_CH |
+| cml                           | DAC_CML_CH |
+| cml_sc                        | DAC_CMLSCALE_CH |
+| amonctrl                      | AMON_CTRL_CH |
+| comp_spi                      | COMP_SPI_CH |
+| coin_mat                      | COIN_MAT_CH |
+| tdctest_n                     | TDCTEST_CH |
+| sswitch                       | S_SWITCH_CH |
+| delay                         | DAC_DELAY_CH |
+| pole_en_N                     | DAC_DELAY_BIT1_CH |
+| energy_c_en                   | ANODE_FLAG_CH |
+| energy_r_en                   | CATHODE_FLAG_CH |
+| cm_sensing_high_r             | SORD_CH |
+| amon_en_n                     | SORD_NOT_CH |
+| edge                          | EDGE_CH |
+| edge_cml                      | EDGE_CML_CH |
+| dmon_en                       | DMON_ENA_CH |
+| dmon_sw                       | DMON_SW_CH |
