@@ -81,7 +81,7 @@ Sources:
 - *KIP MuTRiG configGUI* tooltips from KIP
 
 
-# *** Mapping mutrig1 to mutrig2 parameters *** #
+## Mapping mutrig1 to mutrig2 parameters ##
 
 **Global Settings** 
 ODB: /Equipment/SciFi/Settings/ASICs/Global/
