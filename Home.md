@@ -64,4 +64,4 @@ This is a trial for the Mu3e DAQ manual
 
 ## Housekeeping
 
-* [Wiki info](Wiki info)
+* [Wiki info](INFO)
