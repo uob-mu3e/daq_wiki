@@ -42,46 +42,36 @@
         * `pixel-masking/`
     * `vhdl` -> not used anymore should be cleaned?
 - `docs` -> README files most of it is not up to date or replaced by a Wiki article of the repo.
-- `fe_board/`
-    * `fe_malibu/`
-        * `software/`
-            * `app_src/`
-            * `include` -> lib/firmware/include/
-        * `top.vhd`
-        * `top.qsf` (links to include.qip files)
-        * `Makefile`
+- `fe_board/` -> firmware for all different frontend boards
+    * `fe/` -> should be merged with the firmware folder at some point
     * `fe_max10/`
-        * `...`
+        * `software` -> NIOS software
+        * `top.vhd` -> top vhdl file for the project
     * `fe_mupix/`
         * `...`
     * `fe_scifi/`
         * `...`
+    * `firmware/` -> **should** contain all the common and detector specific firmware
+- `frontends` -> **should** be the place for midas_fe at the moment all is in backend_pc
+- `mhttpd` -> html, js stuff
+- `modules` -> submodules
+    * `analyzer`
+    * `googletests` -> used for scripts in common/tests folder
+    * `jsroot` -> used for analyzer page in midas
+- `online`
+    * `pixels/qctest/ladder` -> qctests
+    * `scifi` -> odb setup scripts for scifi
 
 - `switching_pc/`
-    * `SWB_0`/
-        * `software/`
-            * `app_src/`
-            * `include` -> lib/firmware/include/
-        * `top.vhd`
-        * `top.qsf` (links to include.qip files)
-        * `Makefile`
-    * `SWB_0`/
-        * `...`
-    * `SWB_2`/
-        * `...`
-    * `SWB_3`/
-        * `...`
-    * `A10_dev`/
-        * `...`
+    * `a10_board`/ -> dev board DDR3 RAM  setup with clock reset link for telescope setup
+    * `a10_board_ddr4`/ -> dev board with DDR4 RAM setup with clock reset link for telescope setup
+    * `a10_lhcb`/ -> final switching board at the moment in cosmic run mode
+    * `midas_fe`/ -> MIDAS control software for the switching board
+    * `slowcontrol/` -> lib for detector configuration from SWB to FEB
+    * `tools/` -> folder for hardware test files running on the SWB
 - `farm_pc/`
-    * `A10_dev`/
-        * `...`
-
-## Comments
-
-- [AK] It is now possible to set the values of `SRC_DIR` in `Makefile`,
-  which allows to put sources directly into `software/` directory (instead of `software/app_src/`).
-  This can also be used as default.
-- [AK] how about removing FE v1 firmware, and using `fe/mupix`, `fe/scifi`, `fe/tiles`, `fe/max10` dir names
-- [AK] I would move `firmware/a5/common` to `firmware/common`, and also move `firmware/a10/{swb,farm}` to `firmware/{swm,farm}`
-- [AK] also, I suggest using small case for directories, e.g. `mupix` instead of `Mupix`
+    * `a10_xcvr_example`/ -> dev board with a dummy firmware for testing
+    * `farm_ddr3`/ -> FARM board with DDR3 RAM
+    * `farm_ddr4`/ -> FARM board with DDR4 RAM
+    * `midas_fe`/ -> MIDAS control software for the farm boards DMA / GPU readout
+    * `tools/` -> folder for hardware test files running on the farm boards / GPU
