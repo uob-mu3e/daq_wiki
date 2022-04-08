@@ -59,6 +59,10 @@
     * `googletests` -> used for scripts in common/tests folder
     * `jsroot` -> used for analyzer page in midas
 - `online`
+    * `sequencer` -> midas sequencer files
+    * `sequencer/scifi` -> midas sequencer filse for scifi
+    * `sequencer/pixels` -> midas sequencer filse for pixels
+    * `sequencer/tiles` -> midas sequencer filse for tiles
     * `pixels/qctest/ladder` -> qctests
     * `scifi` -> odb setup scripts for scifi
 
