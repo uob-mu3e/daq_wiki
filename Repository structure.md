@@ -59,14 +59,12 @@
     * `analyzer`
     * `googletests` -> used for scripts in common/tests folder
     * `jsroot` -> used for analyzer page in midas
-- `online`
-    * `sequencer` -> midas sequencer files
-    * `sequencer/scifi` -> midas sequencer filse for scifi
-    * `sequencer/pixels` -> midas sequencer filse for pixels
-    * `sequencer/tiles` -> midas sequencer filse for tiles
+- `online` -> midas experiment dirctory, contains .SHM files
+- `sequencer` -> midas sequencer files
+    * `scifi` -> midas sequencer filse for scifi
+    * `pixels` -> midas sequencer filse for pixels
     * `pixels/qctest/ladder` -> qctests
-    * `scifi` -> odb setup scripts for scifi
-
+    * `tiles` -> midas sequencer filse for tiles
 - `switching_pc/`
     * `a10_board`/ -> dev board DDR3 RAM  setup with clock reset link for telescope setup
     * `a10_board_ddr4`/ -> dev board with DDR4 RAM setup with clock reset link for telescope setup
