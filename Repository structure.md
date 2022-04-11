@@ -52,8 +52,6 @@
     * `fe_scifi/`
         * `...`
     * `firmware/` -> **should** contain all the common and detector specific firmware
-- `frontends` -> **should** be the place for midas_fe at the moment all is in backend_pc
-    * `heplant` -> Frontend to connect to helium plant. Separate submodule hp_fe.git
 - `mhttpd` -> html, js stuff
 - `modules` -> submodules
     * `analyzer`
