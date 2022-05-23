@@ -81,14 +81,14 @@ Sources:
 - *KIP MuTRiG configGUI* tooltips from KIP
 
 
-## Mapping mutrig1 to mutrig2 parameters ##
+## Mapping Midas parameters names to Mutrig-daq parameters names ##
 
 **Global Settings** 
 ODB: /Equipment/SciFi/Settings/ASICs/Global/
 
 #
 
-| Midas day (ODB/custom page)                       | Mutrig-daq  |
+| Midas daq (ODB/custom page)                       | Mutrig-daq  |
 |-------------------------------|----------|
 | ext_trig_mode                 | EXT_TRIG_MODE |
 | ext_trig_endtime_sign         | EXT_TRIG_SIGN_FORW_TIME |
@@ -109,7 +109,7 @@ ODB: /Equipment/SciFi/Settings/ASICs/Global/
 ** Chip settings ** 
 ODB: /Equipment/SciFi/Settings/ASICs/TDCs/
 
-| Mutrig2                      | Mutrig1  |
+| Midas daq (ODB/custom page)                       | Mutrig-daq  |
 |------------------------------|----------|
 | vnpfc                        | DAC_TDC_VNPFC |
 | vnpfc_offset                 | DAC_TDC_VNPFC_OFFSET |
@@ -161,7 +161,7 @@ ODB: /Equipment/SciFi/Settings/ASICs/TDCs/
 ** Channel settings **
 OBD: /Equipment/SciFi/Settings/ASICs/Channels/
 
-| Mutrig2                       | Mutrig1  |
+| Midas daq (ODB/custom page)                       | Mutrig-daq  |
 |-------------------------------|----------|
 | mask                          | DAC_CHANNEL_MASK_CH |
 | recv_all                      | RECV_ALL_CH |
