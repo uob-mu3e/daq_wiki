@@ -84,7 +84,7 @@ Sources:
 ## Mapping Midas parameters names to Mutrig-daq parameters names ##
 
 **Global Settings** 
-ODB: /Equipment/SciFi/Settings/ASICs/Global/
+ODB: /Equipment/SciFiCentral/Settings/ASICs/Global/
 
 #
 
@@ -107,7 +107,7 @@ ODB: /Equipment/SciFi/Settings/ASICs/Global/
 | en_ch_evt_cnt                 | EN_CH_EVT_CNT |
 
 ** Chip settings ** 
-ODB: /Equipment/SciFi/Settings/ASICs/TDCs/
+ODB: /Equipment/SciFiCentral/Settings/ASICs/TDCs/
 
 | Midas daq (ODB/custom page)                       | Mutrig-daq  |
 |------------------------------|----------|
@@ -159,7 +159,7 @@ ODB: /Equipment/SciFi/Settings/ASICs/TDCs/
 | coin_xbar_upper_tx_idac      | COIN_XBAR_upper_TX_iDAC |
 
 ** Channel settings **
-OBD: /Equipment/SciFi/Settings/ASICs/Channels/
+OBD: /Equipment/SciFiCentral/Settings/ASICs/Channels/
 
 | Midas daq (ODB/custom page)                       | Mutrig-daq  |
 |-------------------------------|----------|
