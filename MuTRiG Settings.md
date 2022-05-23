@@ -88,7 +88,7 @@ ODB: /Equipment/SciFi/Settings/ASICs/Global/
 
 #
 
-| Mutrig2                       | Mutrig1  |
+| Midas day (ODB/custom page)                       | Mutrig-daq  |
 |-------------------------------|----------|
 | ext_trig_mode                 | EXT_TRIG_MODE |
 | ext_trig_endtime_sign         | EXT_TRIG_SIGN_FORW_TIME |
