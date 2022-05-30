@@ -2,6 +2,7 @@
 
 ## 2022
 
+* [2022-05-30 - DAQ meeting](DAQ_meeting/2022-06-13)
 * [2022-05-30 - DAQ meeting](DAQ_meeting/2022-05-30)
 * [2022-05-23 - DAQ meeting](DAQ_meeting/2022-05-23)
 * [2022-05-16 - DAQ meeting](DAQ_meeting/2022-05-16)
