@@ -13,7 +13,7 @@ Issues:
 Rough idea:
 
 * Use the fact that a hit takes 6 cycles (tiles) or three and a bit cycles (fibres) to arrive for a first multiplexer: 6 -> 1 for the tiles, 3 -> 1 for the fibres
-* In both cases that requires three PRBS decoders (or an adventurous scheme with partitioning or running the ROM at 375 MHz) - does that fit?
+* In both cases that requires three PRBS decoder inputs (2 decoder blocks ; two decoder inputs per block) (or an adventurous scheme with partitioning or running the ROM at 375 MHz) - does that fit?
 * Then we somehow detect lapses and add that to decoded timestamp (can be done with a 125 MHz/increment by 5 counter)
 * Then we divide the TS by 5
 * The we head into the sorter; much fewer input channels than for the pixels (three for both tiles and fibres), but much larger sorting depth.
@@ -32,3 +32,5 @@ Questions:
      The Arria V A7 has 13660 K of M10K memory (1366 blocks). The PRBS ROM should need less than 70, so that should be ok
 
 * How expensive is the divide by 5 thing?
+    [KB]: Using the LPM_DIVIDE ip (1 pipelining stage, optimize for speed):
+    25ALM, 16 registers, fmax = 465MHz with 1ns input delay.
